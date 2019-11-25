@@ -1,0 +1,24 @@
+
+.interactive{
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    color: $danger;
+    font-size: 28px;
+    background-color: transparent;
+    border: none;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        color: $danger !important;
+        text-decoration: none !important;
+    }
+}
+
+.interactive_active{
+    font-weight: bold;
+}
+
+
+

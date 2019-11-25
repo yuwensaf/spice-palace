@@ -1,0 +1,45 @@
+
+// breakpoints
+@mixin iphone5{
+    @media(min-width: 320px)and(max-width: 374px){
+        @content
+    }
+};
+@mixin iphone6{
+    @media(min-width: 375px){
+        @content
+    }
+};
+@mixin sm{
+    @media(min-width: 576px){
+        @content
+    };
+}
+@mixin pad{
+    @media(min-width: 768px){
+        @content
+    }
+};
+
+@mixin lg{
+    @media(min-width: 992px){
+        @content
+    }
+};
+
+@mixin xl{
+    @media(min-width: 1200px){
+        @content
+    }
+};
+
+
+
+
+
+
+
+
+
+
+

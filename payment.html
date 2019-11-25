@@ -1,0 +1,447 @@
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, mininum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- fb meta -->
+    <link rel="shortcut icon" href="images/kuvar_favicon.ico">
+    <meta name="Kuvar Indian Kitchen" content="道地的印度料理">
+
+    <meta property="og:title" content="Kuvar Indian Kitchen">
+    <meta property="og:description" content="體驗印度料理，最令人難忘的美食之旅。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yuwensaf.github.io/WorkShop-kuvar-bootstrap/">
+    <meta property="og:image" content="https://i.ibb.co/2sd2vfp/logo.png">
+
+    <link rel="apple-touch-icon" href="https://i.ibb.co/02DCRK0/logo-192x.png">
+
+    <title>Payment | Kuvar Indian Kitchen</title>
+
+    <script src="https://kit.fontawesome.com/235111a63f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheets/all.css">
+
+
+</head>
+
+<body class="bg-dark">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-dark text-primary">
+        <!-- 限制「內容的最大寬度」 -->
+        <div class="container">
+
+            <!-- menu toggle button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+                    <i class="fas fa-bars text-primary"></i>
+                </span>
+            </button>
+
+            <!-- logo -->
+            <nav class="navbar nav-logo bg-dark text-primary p-0">
+                <a class="navbar-brand text-center d-flex" href="index.html">
+                    <img src="images/logo.svg" class="mr-2 mt-1" alt="Kuvar Indian Kitchen" title="Kuvar Indian Kitchen"
+                        style="width: 60px;">
+                    <div>
+                        <h1 class="mb-0">Kuvar</h1>
+                        <span style="font-size: 0.8rem">INDIAN KITCHEN</span>
+                    </div>
+                </a>
+            </nav>
+
+
+            <!-- 購物車按鈕 -->
+            <div class="order-md-3">
+                <a href="cart.html" class="btn-cart">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <!-- <span class="badge badge-pill badge-danger">7</span> -->
+                </a>
+            </div>
+
+            <!-- 下拉式選單 -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">菜單</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- payment section -->
+    <section class="container pt-5">
+        <div class="row cart-row">
+            <!-- 區塊：付款資訊 -->
+            <div class="col-lg-8 bg-info recipient-col">
+                <!-- 標題 + process-steps -->
+                <div class="row mx-5">
+                    <!-- 標題 付款資訊 -->
+                    <div class="col-6 px-0">
+                        <div class="cart-title text-white py-5">
+                            <h2 class="mb-0">付款資訊</h2>
+                        </div>
+                    </div>
+                    <!-- process-steps -->
+                    <div class="col-6 px-1 d-flex align-items-center">
+                        <div class="process-steps">
+                            <div class="process-steps-circle checked"><i class="fas fa-check"></i></div>
+                            <div class="process-steps-circle active"></div>
+                            <div class="process-steps-circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 表單內容 -->
+                <form action="invoice.html" class="recipient-form mx-5 needs-validation" novalidate>
+                    <!-- 信用卡卡號 -->
+                    <div class="form-row text-white">
+                        <div class="form-group col-12">
+                            <label for="payment-cardNumber">信用卡卡號</label>
+                            <div class="input-group mb-3">
+                                <input type="text" id="payment-cardNumber" class="form-control custom-input"
+                                    placeholder="9012-3456-7890-1234" aria-label="9012-3456-7890-1234"
+                                    aria-describedby="basic-addon2" required>
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <i class="far fa-credit-card"></i>
+                                    </span>
+                                </div>
+                                <div class="invalid-feedback">
+                                    請輸入信用卡卡號
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 持卡人姓名 -->
+                    <div class="form-row text-white">
+                        <!-- 姓氏 -->
+                        <div class="form-group col-6">
+                            <label for="payment-lastName">持卡人姓名</label>
+                            <input type="text" id="payment-lastName" class="form-control custom-input" placeholder="王"
+                                required>
+                            <div class="invalid-feedback">
+                                請輸入姓氏
+                            </div>
+                        </div>
+                        <!-- 名字 -->
+                        <div class="form-group col-6 d-flex flex-column justify-content-end">
+                            <input type="text" class="form-control custom-input" placeholder="小玉" required>
+                            <div class="invalid-feedback">
+                                請輸入名字
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 有效期限 -->
+                    <div class="form-row text-white">
+                        <!-- 月 -->
+                        <div class="form-group col-6">
+                            <label for="payment-expMonth">有效期限</label>
+                            <select name="payment-expMonth" id="payment-expMonth" class="form-control custom-input"
+                                required>
+                                <option value="">月</option>
+                                <option value="1 月">1 月</option>
+                                <option value="2 月">2 月</option>
+                                <option value="3 月">3 月</option>
+                                <option value="4 月">4 月</option>
+                                <option value="5 月">5 月</option>
+                                <option value="6 月">6 月</option>
+                                <option value="7 月">7 月</option>
+                                <option value="8 月">8 月</option>
+                                <option value="9 月">9 月</option>
+                                <option value="10 月">10 月</option>
+                                <option value="11 月">11 月</option>
+                                <option value="12 月">12 月</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                請選擇月份
+                            </div>
+                        </div>
+                        <!-- 年 -->
+                        <div class="form-group col-6 d-flex flex-column justify-content-end">
+                            <select name="payment-expYear" class="form-control custom-input" required>
+                                <option value="">年</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                請選擇年份
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 安全碼 -->
+                    <div class="form-row text-white">
+                        <div class="form-group col-12">
+                            <label for="payment-code">安全碼</label>
+                            <input type="text" id="payment-code" class="form-control custom-input" placeholder="123"
+                                required>
+                            <div class="invalid-feedback">
+                                請輸入安全碼
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- 按鈕 -->
+                    <div class="form-row mx-0 mt-4 mb-5">
+                        <!-- 按鈕：上一步 -->
+                        <div class="col-6">
+                            <a href="checkout.html"
+                                class="bg-danger text-white text-center d-block py-3 custom-checkout-btn">上一步</a>
+                        </div>
+                        <!-- 按鈕：下一步 -->
+                        <div class="col-6">
+                            <button type="submit"
+                                class="bg-danger text-white text-center w-100 py-3 custom-checkout-btn">下一步</button>
+                        </div>
+                    </div>
+    
+    
+    
+    
+                </form>
+            </div>
+            <!-- 右側區塊 -->
+            <div class="col-lg-4 px-0 d-none d-lg-inline">
+                <!-- 區塊：訂單摘要 -->
+                <div class="checkout-col bg-light mb-4 pb-2">
+                    <!-- 標題 -->
+                    <div class="order-title text-center text-dark py-2 px-3 mb-2 bg-warning">
+                        <p class="h3 mb-0">訂單摘要</p>
+                    </div>
+                    <!-- 表格 -->
+                    <table class="text-dark order-table">
+                        <tbody>
+                            <tr>
+                                <td>小計</td>
+                                <td>NT&dollar; 560</td>
+                            </tr>
+                            <tr>
+                                <td>運費</td>
+                                <td>NT&dollar; 150</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>總計</td>
+                                <td>NT&dollar; 710</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- 區塊：購物清單 -->
+                <div class="checkout-col bg-light pb-2">
+                    <!-- 標題 -->
+                    <div class="order-title text-center text-dark py-2 px-3 mb-2 bg-warning">
+                        <p class="h3 mb-0">購物清單</p>
+                    </div>
+                    <!-- 清單內容 -->
+                    <div class="container m-3">
+                        <!-- 第一個商品 -->
+                        <div class="row mb-3">
+                            <!-- 商品圖片 -->
+                            <div class="col-4 cart-item-img" style="background-image: url(images/pumpkin-soup.jpg);">
+                            </div>
+                            <div class="col-8 d-flex align-items-center">
+                                <!-- 品名 + 單價 -->
+                                <div class="cart-item-info mb-0">
+                                    <p class="cart-item-name mb-0">孜然南瓜湯</p>
+                                    <p class="cart-item-name mb-0">(3)</p>
+                                    <p>NT&dollar; 70</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 第二個商品 -->
+                        <div class="row">
+                            <!-- 商品圖片 -->
+                            <div class="col-4 cart-item-img" style="background-image: url(images/curry-5.jpg);"></div>
+                            <div class="col-8 d-flex align-items-center">
+                                <!-- 品名 + 單價 -->
+                                <div class="cart-item-info mb-0">
+                                    <p class="cart-item-name mb-0">葫蘆巴風味羊肉</p>
+                                    <p class="cart-item-name mb-0">(1)</p>
+                                    <p>NT&dollar; 350</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- subscribe section -->
+    <section class="subscribe" style="margin-top: 0px;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- 文字 -->
+                <div class="col-md-6 subscribe-text">
+                    <img src="images/logo.svg" class="mr-1">
+                    <p class="h4 text-dark mt-1 mb-0">訂閱你我的辛辣郵件</p>
+                </div>
+                <!-- form-square -->
+                <div class="col-md-6 subscribe-form">
+                    <div class="input-group mb-3 form-square">
+                        <div
+                            class="input-group-prepend bg-danger form-square-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-envelope text-white"></i>
+                        </div>
+                        <input type="text" class="form-control form-square-input"
+                            aria-label="Amount (to the nearest dollar)">
+                        <div class="input-group-append form-square-btn">
+                            <button class="btn-danger"><i class="fas fa-arrow-right text-white"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer py-3">
+        <div class="container">
+            <!-- 第一個 row：店面資訊 + 右側文字 -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="footer-title">
+                        <p class="text-white">Kuvar Indian Kitchen</p>
+                    </div>
+                    <div class="footer-info text-white">
+                        <p>02-2345-9876</p>
+                        <p>kuvar@gmail.com</p>
+                        <p>318&nbsp;台北市瑪薩拉區木藤路&nbsp;79&nbsp;號</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-text text-white">
+                        <p class="h5">今天是個——</p>
+                        <p class="h5 mt-3">吃咖哩的好日子。</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 第二個 row：社群 icon + copyright -->
+            <div class="row">
+                <!-- 社群 icon -->
+                <div class="col-md-6">
+                    <div class="footer-social-icon text-primary">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                </div>
+                <!-- copyright -->
+                <div class="col-md-6 footer-copyright text-primary">
+                    <p>&copy; 2019 Kuvar All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="text-light" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="h6">是否刪除該品項？</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-danger">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/all.js"></script>
+
+</body>
+
+
+</html>

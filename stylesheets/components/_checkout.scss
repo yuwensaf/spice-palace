@@ -1,0 +1,87 @@
+
+.recipient-col{
+    padding-left: 0;
+    padding-right: 0;
+}
+.recipient-form{
+    label{
+        font-size: $font-size-lg;
+    }
+}
+.custom-input{
+    height: 58px;
+    font-size: 1.1rem;
+    letter-spacing: 1.2;
+    background-color: #FFEA83;
+    border: 1px solid #FFEA83 !important;
+    border-radius: 0 !important;
+    color: $dark !important;
+    &:focus{
+        background-color: $light;
+        border: 1px solid $light !important;
+        box-shadow: none;
+    }
+}
+.custom-checkout-btn{
+    border: none;
+    font-size: $font-size-lg;
+    transition: all 0.3s;
+    &:hover{
+        text-decoration: none;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.checkout-col{    
+    // height: 193px;
+    margin-left: 10%;
+}
+
+// invoice 頁面
+.invoice-tab{
+    @include iphone6{
+        flex-direction: row !important;
+    }
+}
+.invoice-tab-item{
+    background-color: $info;
+    border: 1px solid #FFEA83;
+    color: #FFEA83;
+    font-size: $h4-font-size;
+    height: 58px;
+    text-align: center;
+    &.active, &:hover{
+        background-color: #FFEA83;
+        color: $info;
+        border: 1px solid #FFEA83;
+    }
+}
+.invoice-checkbox-label{
+    font-size: $font-size-base !important;
+}
+
+// success 頁面
+.success-container{
+    height: 518px;
+    background-image: url(../../images/success.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.success-text-bg{
+    background-color: rgba(255, 255, 255, .6);
+    p{
+        color: $danger;
+        letter-spacing: 10px;
+    }
+}
+.continue-btn{
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+

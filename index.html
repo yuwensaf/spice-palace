@@ -1,0 +1,449 @@
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, mininum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- fb meta -->
+    <link rel="shortcut icon" href="images/kuvar_favicon.ico">
+    <meta name="Kuvar Indian Kitchen" content="道地的印度料理">
+
+    <meta property="og:title" content="Kuvar Indian Kitchen">
+    <meta property="og:description" content="體驗印度料理，最令人難忘的美食之旅。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yuwensaf.github.io/WorkShop-kuvar-bootstrap/">
+    <meta property="og:image" content="https://i.ibb.co/2sd2vfp/logo.png">
+
+    <link rel="apple-touch-icon" href="https://i.ibb.co/02DCRK0/logo-192x.png">
+
+    <title>Kuvar Indian Kitchen</title>
+
+    <script src="https://kit.fontawesome.com/235111a63f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheets/all.css">
+
+
+</head>
+
+<body class="bg-dark">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-dark text-primary">
+        <!-- 限制「內容的最大寬度」 -->
+        <div class="container">
+
+            <!-- menu toggle button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+                    <i class="fas fa-bars text-primary"></i>
+                </span>
+            </button>
+
+            <!-- logo -->
+            <nav class="navbar nav-logo bg-dark text-primary p-0">
+                <a class="navbar-brand text-center d-flex" href="index.html">
+                    <img src="images/logo.svg" class="mr-2 mt-1" alt="Kuvar Indian Kitchen" title="Kuvar Indian Kitchen"
+                        style="width: 60px;">
+                    <div>
+                        <h1 class="mb-0">Kuvar</h1>
+                        <span style="font-size: 0.8rem">INDIAN KITCHEN</span>
+                    </div>
+                </a>
+            </nav>
+
+
+            <!-- 購物車按鈕 -->
+            <div class="dropdown order-md-3">
+                <a href="#" class="btn-cart" data-toggle="dropdown">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge badge-pill badge-danger">7</span>
+                </a>
+                <!-- 購物車的下拉式選單 -->
+                <div class="dropdown-menu dropdown-menu-right cart-menu px-3 py-4" aria-labelledby="dropdownMenuButton">
+                    <div class="h6">已選購商品</div>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#removeModal" data-title="孜然南瓜湯"
+                                        data-quantity="&nbsp;3 份" data-backdrop="false">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>孜然南瓜湯</td>
+                                <td>3 份</td>
+                                <td>&dollar;210</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#removeModal" data-title="葫蘆巴風味羊肉"
+                                        data-quantity="&nbsp;1 份" data-backdrop="false">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>葫蘆巴風味羊肉</td>
+                                <td>1 份</td>
+                                <td>&dollar;350</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- 結帳去 按鈕 -->
+                    <a href="cart.html" class="btn btn-primary w-100 text-center">結帳去</a>
+                </div>
+            </div>
+
+            <!-- 下拉式選單 -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-active" href="index.html">首頁<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">菜單</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- header -->
+    <header>
+        <div class="banner" style="background-image: url(images/banner.jpg);"></div>
+        <!-- 三塊方形 -->
+        <div class="row justify-content-center no-gutter" style="height: 256px; margin-top: -90px;">
+            <div class="col d-flex justify-content-center align-items-center frosted-wrap"
+                style="background-image: url(images/curry-1.jpg); margin-right: 2px;">
+                <a href="#">
+                    <div class="frostedGlass-1">
+                        <div class="frosted-bg">
+                            <span class="h3 text-center">本日精選</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center frosted-wrap"
+                style="background-image: url(images/curry-2.jpg); margin-right: 2px;">
+                <a href="">
+                    <div class="frostedGlass-2">
+                        <div class="frosted-bg">
+                            <span class="h3">人氣推薦</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center frosted-wrap"
+                style="background-image: url(images/curry-4.jpg);">
+                <a href="">
+                    <div class="frostedGlass-3">
+                        <div class="frosted-bg">
+                            <span class="h3">新品上市</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- section -->
+    <!-- 上面的 section -->
+    <section class="landingPage-section bg-danger text-white">
+        <div class="container">
+            <div class="row h-100">
+                <!-- 標題 -->
+                <div class="col-lg-1 landingPage-section-title_1 py-2 order-lg-3">
+                    <div>
+                        <h2 class="landingPage-section-break mx-0">印度菜</h2>
+                        <h2 class="mx-0">為什麼離不開香料？</h2>
+                    </div>
+                </div>
+                <!-- 圖片 -->
+                <div class="col-lg-6 landingPage-section-pic py-4 landingPage-section-break"
+                    style="background-image: url(images/chef.jpg);"></div>
+                <!-- 文字內容 -->
+                <div class="col-lg-5 landingPage-section-text_1 py-2">
+                    <p>
+                        提到印度菜，就想到各種辛香料混雜其間，但事實上印度現在的飲食習慣，是從伊朗等中東地區而來，加上印度本土生產胡椒等各式香料，讓印度菜完全離不開香料。每個印度家庭，不管他們屬於什麼宗教或住在北印度或南印度，廚房一定會準備的基本香料，包括馬薩拉和紅辣椒粉、薑黃粉、芫荽粉（俗稱香菜粉）等。印度每個母親都會有自己獨特配置的香料配方，當小孩長大離開家後，都會留著媽媽印度菜香料的味道。因此，印度菜與香料的結合，讓印度的飲食文化與家庭文化和傳統，緊緊連結而密不可分。
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 下面的 section -->
+    <section class="landingPage-section bg-danger text-white" style="margin-bottom: 60px;">
+        <div class="container">
+            <div class="row h-100">
+                <!-- 標題 -->
+                <div class="col-lg-2 landingPage-section-title_2 py-2 order-lg-2">
+                    <div>
+                        <h2 class="landingPage-section-break mx-0">為什麼</h2>
+                        <h2 class="mx-0">一定要吃香料？</h2>
+                    </div>
+                </div>
+                <!-- 圖片 -->
+                <div class="col-lg-6 landingPage-section-pic py-4 landingPage-section-break order-lg-3"
+                    style="background-image: url(images/spices.jpg);"></div>
+                <!-- 文字內容 -->
+                <div class="col-lg-4 landingPage-section-text_2 py-2">
+                    <p>作為醬料的咖哩不是單一的香料，而是多種香料的結合。雖然香料的調配比例因咖哩的品種而異，但某些有益健康的香料是大多數咖哩粉的「標配」，包括孜然、薑黃、香菜、薑、荳蔻、肉桂和丁香。天然辛香料因為具有特殊的香氣和味道，又大多含有能促進食慾、刺激腸胃的成分，加入菜餚中不但能增添美味，也能幫助消化。辛香料中所含的辣味物質，多具有殺菌效果，外敷可以治療皮膚病，內服可以維持腸道健康，所以適度攝取，對健康有很大的幫助。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 想吃咖哩——是不需要理由的。 -->
+    <div class="text-white landingPage-custom-title mb-5">
+        <h2 class="landingPage-section-break mx-0">想吃咖哩——</h2>
+        <h2 class="mx-0">是不需要理由的。</h2>
+    </div>
+
+    <!-- item-card -->
+    <div class="container" style="padding-bottom: 30px;">
+        <div class="row">
+            <div class="col-md">
+                <div class="item-card">
+                    <!-- 本日精選 -->
+                    <div class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
+                        <span>本日精選</span>
+                    </div>
+                    <!-- 互動元件：愛心 -->
+                    <button class="interactive">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <!-- 圖片 -->
+                    <div class="item-card-pic" style="background-image: url(images/curry-5.jpg);"></div>
+                    <!-- 品名、價格 -->
+                    <div class="item-card-info text-white">
+                        <div class="row no-gutter">
+                            <div class="col">
+                                <p>葫蘆巴風味羊肉</p>
+                            </div>
+                            <div class="col">
+                                <p><strong>NT&dollar; 350</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 「加入購物車」按鈕 -->
+                    <button type="button" class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="item-card">
+                    <!-- 本日精選 -->
+                    <div class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
+                        <span>本日精選</span>
+                    </div>
+                    <!-- 互動元件：愛心 -->
+                    <button class="interactive">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <!-- 圖片 -->
+                    <div class="item-card-pic" style="background-image: url(images/curry-6.jpg);"></div>
+                    <!-- 品名、價格 -->
+                    <div class="item-card-info text-white">
+                        <div class="row no-gutter">
+                            <div class="col">
+                                <p>椰汁咖哩魚</p>
+                            </div>
+                            <div class="col">
+                                <p><strong>NT&dollar; 300</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 「加入購物車」按鈕 -->
+                    <button type="button" class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="item-card">
+                    <!-- 本日精選 -->
+                    <div class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
+                        <span>本日精選</span>
+                    </div>
+                    <!-- 互動元件：愛心 -->
+                    <button class="interactive">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <!-- 圖片 -->
+                    <div class="item-card-pic" style="background-image: url(images/curry-8.jpg);"></div>
+                    <!-- 品名、價格 -->
+                    <div class="item-card-info text-white">
+                        <div class="row no-gutter">
+                            <div class="col">
+                                <p>香料雞</p>
+                            </div>
+                            <div class="col">
+                                <p><strong>NT&dollar; 320</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 「加入購物車」按鈕 -->
+                    <button type="button" class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- subscribe section -->
+    <section class="subscribe">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- 文字 -->
+                <div class="col-md-6 subscribe-text">
+                    <img src="images/logo.svg" class="mr-1"> 
+                    <p class="h4 text-dark mt-1 mb-0">訂閱你我的辛辣郵件</p>
+                </div>
+                <!-- form-square -->
+                <div class="col-md-6 subscribe-form">
+                    <div class="input-group mb-3 form-square">
+                        <div class="input-group-prepend bg-danger form-square-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-envelope text-white"></i>
+                        </div>
+                        <input type="text" class="form-control form-square-input" aria-label="Amount (to the nearest dollar)">
+                        <div class="input-group-append form-square-btn">
+                            <button class="btn-danger"><i class="fas fa-arrow-right text-white"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer py-3">
+        <div class="container">
+            <!-- 第一個 row：店面資訊 + 右側文字 -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="footer-title">
+                        <p class="text-white">Kuvar Indian Kitchen</p>
+                    </div>
+                    <div class="footer-info text-white">
+                        <p>02-2345-9876</p>
+                        <p>kuvar@gmail.com</p>
+                        <p>318&nbsp;台北市瑪薩拉區木藤路&nbsp;79&nbsp;號</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-text text-white">
+                        <p class="h5">今天是個——</p>
+                        <p class="h5 mt-3">吃咖哩的好日子。</p>
+                    </div>
+    
+                </div>
+            </div>
+
+            <!-- 第二個 row：社群 icon + copyright -->
+            <div class="row">
+                <!-- 社群 icon -->
+                <div class="col-md-6">
+                    <div class="footer-social-icon text-primary">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>                        
+                    </div>
+                </div>
+                <!-- copyright -->
+                <div class="col-md-6 footer-copyright text-primary">
+                    <p>&copy; 2019 Kuvar All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    
+    
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="text-light" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="h6">是否刪除該品項？</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-danger">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/all.js"></script>
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
