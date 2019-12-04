@@ -84,154 +84,157 @@
         <div class="row cart-row">
             <!-- 區塊：發票寄送 -->
             <div class="col-lg-8 bg-info recipient-col">
-                <!-- 標題 + process-steps -->
-                <div class="row mx-5">
-                    <!-- 標題 發票寄送 -->
-                    <div class="col-6 px-0">
-                        <div class="cart-title text-white py-5">
-                            <h2 class="mb-0">發票寄送</h2>
-                        </div>
-                    </div>
-                    <!-- process-steps -->
-                    <div class="col-6 px-1 d-flex align-items-center">
-                        <div class="process-steps">
-                            <div class="process-steps-circle checked"><i class="fas fa-check"></i></div>
-                            <div class="process-steps-circle checked"><i class="fas fa-check"></i></div>
-                            <div class="process-steps-circle active"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- list group -->
-                <div class="row mx-5">
-                    <!-- 列表選項 -->
-                    <div class="col-12 px-0">
-                        <div class="list-group invoice-tab" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action invoice-tab-item active"
-                                id="list-eInvoice-list" data-toggle="list" href="#list-eInvoice" role="tab"
-                                aria-controls="eInvoice">電子發票</a>
-                            <a class="list-group-item list-group-item-action invoice-tab-item" id="list-mailInvoice-list"
-                                data-toggle="list" href="#list-mailInvoice" role="tab" aria-controls="mailInvoice">郵寄發票</a>
-                        </div>
-                    </div>
-                    <!-- 列表內容 -->
-                    <div class="col-12 px-0 mt-5">
-                        <div class="tab-content" id="nav-tabContent">
-                            <!-- 電子發票 -->
-                            <div class="tab-pane fade show active" id="list-eInvoice" role="tabpanel"
-                                aria-labelledby="list-eInvoice-list">
-                                <!-- 表單內容 -->
-                                <form action="success.html" class="recipient-form needs-validation" novalidate>
-                                    <!-- 電子郵件 -->
-                                    <div class="form-row text-white">
-                                        <!-- 電子郵件 -->
-                                        <div class="form-group col-12">
-                                            <label for="payment-lastName">電子郵件</label>
-                                            <input type="email" id="payment-lastName" class="form-control custom-input"
-                                                placeholder="curry@email.com" required>
-                                            <div class="invalid-feedback">
-                                                電子郵件輸入錯誤
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 統一編號（選填） -->
-                                    <div class="form-row text-white">
-                                        <div class="form-group col-12">
-                                            <label for="payment-code">統一編號（選填）</label>
-                                            <input type="text" id="payment-code" class="form-control custom-input"
-                                                placeholder="12345678">
-                                        </div>
-                                    </div>
-    
-                                    <!-- 按鈕 -->
-                                    <div class="form-row mx-0 mt-4 mb-5">
-                                        <!-- 按鈕：上一步 -->
-                                        <div class="col-6">
-                                            <a href="payment.html"
-                                                class="bg-danger text-white text-center d-block py-3 custom-checkout-btn">上一步</a>
-                                        </div>
-                                        <!-- 按鈕：下一步 -->
-                                        <div class="col-6">
-                                            <button type="submit"
-                                                class="bg-danger text-white text-center w-100 py-3 custom-checkout-btn">下一步</button>
-                                        </div>
-                                    </div>
-                                </form>
+                <div class="container px-6">
+                    <!-- 標題 + process-steps -->
+                    <div class="row">
+                        <!-- 標題 發票寄送 -->
+                        <div class="col-6">
+                            <div class="cart-title text-white py-5">
+                                <h2 class="mb-0">發票寄送</h2>
                             </div>
-                            <!-- 郵寄發票 -->
-                            <div class="tab-pane fade" id="list-mailInvoice" role="tabpanel"
-                                aria-labelledby="list-mailInvoice-list">
-                                <!-- 表單內容 -->
-                                <form action="success.html" class="recipient-form needs-validation" novalidate>
-                                    <!-- 地址 -->
-                                    <div class="form-row text-white">
-                                        <div class="form-group col-6">
-                                            <label for="recipient-city">地址</label>
-                                            <select name="city" id="recipient-city" class="form-control custom-input"
-                                                required>
-                                                <option value="">-請選擇-</option>
-                                                <option value="台北市">台北市</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                請選擇城市
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-6 d-flex flex-column justify-content-end">
-                                            <!-- checkbox -->
-                                            <div class="col d-flex justify-content-end align-items-center">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                    <label class="custom-control-label invoice-checkbox-label" for="customCheck1">同收件地址</label>
+                        </div>
+                        <!-- process-steps -->
+                        <div class="col-6 d-flex align-items-center">
+                            <div class="process-steps">
+                                <div class="process-steps-circle checked"><i class="fas fa-check"></i></div>
+                                <div class="process-steps-circle checked"><i class="fas fa-check"></i></div>
+                                <div class="process-steps-circle active"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- list group -->
+                    <div class="row">
+                        <!-- 列表選項 -->
+                        <div class="col-12">
+                            <div class="list-group invoice-tab" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action invoice-tab-item active"
+                                    id="list-eInvoice-list" data-toggle="list" href="#list-eInvoice" role="tab"
+                                    aria-controls="eInvoice">電子發票</a>
+                                <a class="list-group-item list-group-item-action invoice-tab-item"
+                                    id="list-mailInvoice-list" data-toggle="list" href="#list-mailInvoice" role="tab"
+                                    aria-controls="mailInvoice">郵寄發票</a>
+                            </div>
+                        </div>
+                        <!-- 列表內容 -->
+                        <div class="col-12 mt-5">
+                            <div class="tab-content" id="nav-tabContent">
+                                <!-- 電子發票 -->
+                                <div class="tab-pane fade show active" id="list-eInvoice" role="tabpanel"
+                                    aria-labelledby="list-eInvoice-list">
+                                    <!-- 表單內容 -->
+                                    <form action="success.html" class="recipient-form needs-validation" novalidate>
+                                        <!-- 電子郵件 -->
+                                        <div class="form-row text-white">
+                                            <!-- 電子郵件 -->
+                                            <div class="form-group col-12">
+                                                <label for="payment-lastName">電子郵件</label>
+                                                <input type="email" id="payment-lastName" class="form-control custom-input"
+                                                    placeholder="curry@email.com" required>
+                                                <div class="invalid-feedback">
+                                                    電子郵件輸入錯誤
                                                 </div>
                                             </div>
-                                            <!-- 下拉式選單 -->
-                                            <select name="section" id="recipient-section" class="form-control custom-input"
-                                                required>
-                                                <option value="">-請選擇-</option>
-                                                <option value="內湖區">內湖區</option>
-                                                <option value="南港區">南港區</option>
-                                                <option value="木柵區">木柵區</option>
-                                                <option value="士林區">士林區</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                請選擇區域
+                                        </div>
+                                        <!-- 統一編號（選填） -->
+                                        <div class="form-row text-white">
+                                            <div class="form-group col-12">
+                                                <label for="payment-code">統一編號（選填）</label>
+                                                <input type="text" id="payment-code" class="form-control custom-input"
+                                                    placeholder="12345678">
                                             </div>
                                         </div>
-                                        <div class="form-group col-12">
+    
+                                        <!-- 按鈕 -->
+                                        <div class="form-row mt-4 mb-5">
+                                            <!-- 按鈕：上一步 -->
+                                            <div class="col-6">
+                                                <a href="payment.html"
+                                                    class="bg-danger text-white text-center d-block py-3 custom-checkout-btn">上一步</a>
+                                            </div>
+                                            <!-- 按鈕：下一步 -->
+                                            <div class="col-6">
+                                                <button type="submit"
+                                                    class="bg-danger text-white text-center w-100 py-3 custom-checkout-btn">下一步</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- 郵寄發票 -->
+                                <div class="tab-pane fade" id="list-mailInvoice" role="tabpanel"
+                                    aria-labelledby="list-mailInvoice-list">
+                                    <!-- 表單內容 -->
+                                    <form action="success.html" class="recipient-form needs-validation" novalidate>
+                                        <!-- checkbox 同收件地址 -->
+                                        <div class="form-group text-white d-flex justify-content-end">                                            
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label invoice-checkbox-label"
+                                                    for="customCheck1">同收件地址</label>
+                                            </div>
+                                        </div>
+                                        <!-- 地址 -->
+                                        <div class="form-row text-white">
+                                            <div class="form-group col-md-6">
+                                                <label for="recipient-city">地址</label>
+                                                <select name="city" id="recipient-city"
+                                                    class="form-control custom-input custom-select" required>
+                                                    <option value="">-請選擇-</option>
+                                                    <option value="台北市">台北市</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    請選擇城市
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 form-group-margin">
+                                                <!-- 下拉式選單 -->
+                                                <select name="section" id="recipient-section"
+                                                    class="form-control custom-input custom-select" required>
+                                                    <option value="">-請選擇-</option>
+                                                    <option value="內湖區">內湖區</option>
+                                                    <option value="南港區">南港區</option>
+                                                    <option value="木柵區">木柵區</option>
+                                                    <option value="士林區">士林區</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    請選擇區域
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group text-white">
                                             <input type="text" id="recipient-address" class="form-control custom-input"
                                                 placeholder="開心路 75 號" required>
                                             <div class="invalid-feedback">
                                                 地址輸入錯誤
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- 統一編號（選填） -->
-                                    <div class="form-row text-white">
-                                        <div class="form-group col-12">
-                                            <label for="payment-code">統一編號（選填）</label>
-                                            <input type="text" id="payment-code" class="form-control custom-input"
-                                                placeholder="12345678">
+                                        <!-- 統一編號（選填） -->
+                                        <div class="form-row text-white">
+                                            <div class="form-group col-12">
+                                                <label for="payment-code-mail">統一編號（選填）</label>
+                                                <input type="text" id="payment-code-mail" class="form-control custom-input"
+                                                    placeholder="12345678">
+                                            </div>
                                         </div>
-                                    </div>
     
-                                    <!-- 按鈕 -->
-                                    <div class="form-row mx-0 mt-4 mb-5">
-                                        <!-- 按鈕：上一步 -->
-                                        <div class="col-6">
-                                            <a href="payment.html"
-                                                class="bg-danger text-white text-center d-block py-3 custom-checkout-btn">上一步</a>
+                                        <!-- 按鈕 -->
+                                        <div class="form-row mt-4 mb-5">
+                                            <!-- 按鈕：上一步 -->
+                                            <div class="col-6">
+                                                <a href="payment.html"
+                                                    class="bg-danger text-white text-center d-block py-3 custom-checkout-btn">上一步</a>
+                                            </div>
+                                            <!-- 按鈕：下一步 -->
+                                            <div class="col-6">
+                                                <button type="submit"
+                                                    class="bg-danger text-white text-center w-100 py-3 custom-checkout-btn">下一步</button>
+                                            </div>
                                         </div>
-                                        <!-- 按鈕：下一步 -->
-                                        <div class="col-6">
-                                            <button type="submit"
-                                                class="bg-danger text-white text-center w-100 py-3 custom-checkout-btn">下一步</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-    
             </div>
             <!-- 右側區塊 -->
             <div class="col-lg-4 px-0 d-none d-lg-inline">
@@ -332,7 +335,7 @@
                             class="input-group-prepend bg-danger form-square-icon d-flex justify-content-center align-items-center">
                             <i class="fas fa-envelope text-white"></i>
                         </div>
-                        <input type="text" class="form-control form-square-input"
+                        <input type="email" class="form-control form-square-input"
                             aria-label="Amount (to the nearest dollar)">
                         <div class="input-group-append form-square-btn">
                             <button class="btn-danger"><i class="fas fa-arrow-right text-white"></i></button>

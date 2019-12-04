@@ -123,15 +123,12 @@
 .menu_list-group{
     font-size: $h5-font-size;
 }
-.menu_list-item{
-    padding-left: 0;
-    padding-right: 0;
-}
+
 .page-link{
     color: $info;
 }
 .page-item.active .page-link{
-    color: #fff;
+    color: $white;
     background-color: $info;
     border-color: $info;
 }
@@ -143,24 +140,14 @@
         margin-bottom: 60px;
     }
 }
-.login-container{
-    @include sm{
-        width: 540px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    @include pad{
-        width: 100%;
-    }
-    .fastLogin-title{
-        font-size: $h5-font-size;
-        @include lg{
-            font-size: $h3-font-size;
-        }
+
+.fastLogin-title{
+    font-size: $h5-font-size;
+    @include lg{
+        font-size: $h3-font-size;
     }
 }
+
 .login-box{
     background-color: $info;
     .login-box-title{
@@ -170,7 +157,7 @@
 .social-btn{
     width: 98%;
     height: 56px;
-    background-color: #FFEA83;
+    background-color: $accent;
     transition: all 0.3s;
     border: none;
     img{
@@ -200,11 +187,11 @@
     }
     .custom-input{
         height: 58px;
-        background-color: #FFEA83;
-        border: 1px solid #FFEA83 !important;
+        background-color: $accent;
+        border: 1px solid $accent !important;
         color: $dark !important;
         &:focus{
-            background-color: #FFEA83;
+            background-color: $accent;
             box-shadow: none;
         }
     }
@@ -232,7 +219,7 @@
     }
 }
 .fastLogin-container{
-    background-color: #FFEA83;
+    background-color: $accent;
     color: $info;
     padding-top: 20px;
     padding-bottom: 20px;

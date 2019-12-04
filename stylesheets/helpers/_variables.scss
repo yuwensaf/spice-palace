@@ -74,6 +74,7 @@ $warning:       #E8C307; //$yellow !default;
 $danger:        #cf455c; //$red !default;
 $light:         $gray-100 !default;
 $dark:          #444444; //$gray-800 !default;
+$accent:        #FFEA83;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -520,9 +521,9 @@ $form-check-inline-input-margin-x:      .3125rem !default;
 $form-grid-gutter-width:                10px !default;
 $form-group-margin-bottom:              1rem !default;
 
-$input-group-addon-color:               #B39400; //$input-color !default;
-$input-group-addon-bg:                  #FFEA83; //$gray-200 !default;
-$input-group-addon-border-color:        #FFEA83; //$input-border-color !default;
+$input-group-addon-color:               $info; //$input-color !default;
+$input-group-addon-bg:                  $accent; //$gray-200 !default;
+$input-group-addon-border-color:        $accent; //$input-border-color !default;
 
 $custom-forms-transition:               background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 

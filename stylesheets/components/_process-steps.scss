@@ -21,7 +21,7 @@
 }
 // 圓圈外框 - 更淺的顏色
 .process-steps-circle.active{
-    border: 1px solid #FFEA83;
+    border: 1px solid $accent;
 }
 // 內部的實心圓（使用“偽元素”來製作）
 .process-steps-circle.active:after{
@@ -29,11 +29,11 @@
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background-color: #FFEA83;
+    background-color: $accent;
 }
 // 圓圈裡面的勾勾
 .process-steps-circle.checked{
-    background-color: #FFEA83;
+    background-color: $accent;
     font-size: 0.75rem;
     color: $info;
     i{

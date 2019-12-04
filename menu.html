@@ -112,7 +112,7 @@
     </nav>
 
     <!-- header -->
-    <header style="margin-bottom: 50px;">
+    <header class="header_layout" style="margin-bottom: 50px;">
         <div class="banner" style="background-image: url(images/banner-2.jpg); display: flex; align-items: center;">
             <!-- 小標題 -->
             <div class="container">
@@ -127,6 +127,7 @@
     <!-- list group -->
     <div class="container">
         <div class="row">
+            <!-- 選單 -->
             <div class="col-md-3">
                 <div class="list-group menu_list-group text-center text-white mb-5" id="list-tab" role="tablist">
                     <div class="list-group-item bg-info">商品類別</div>
@@ -140,695 +141,688 @@
                         role="tab" aria-controls="new">新品上市（2）</a>
                 </div>
             </div>
+            <!-- 頁面內容 -->
             <div class="col-md-9 menu_list-item">
                 <div class="tab-content" id="nav-tabContent">
                     <!-- 頁面：所有品項 -->
                     <div class="tab-pane active" id="list-all" role="tabpanel" aria-labelledby="list-all-list">
                         <!-- item-card -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 本日精選 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
-                                            <span>本日精選</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-5.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>葫蘆巴風味羊肉</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 350</strong></p>
-                                                </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 本日精選 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
+                                        <span>本日精選</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-5.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>葫蘆巴風味羊肉</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 350</strong></p>
                                             </div>
                                         </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 本日精選 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
-                                            <span>本日精選</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-6.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>椰汁咖哩魚</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 300</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 本日精選 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
-                                            <span>本日精選</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-8.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>香料雞</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 320</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 人氣推薦 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
-                                            <span>人氣推薦</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-1.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>主廚羊肉</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 320</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 人氣推薦 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
-                                            <span>人氣推薦</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-3.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>辛辣咖哩蝦</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 350</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 人氣推薦 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
-                                            <span>人氣推薦</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-2.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>香料扁豆咖哩</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 240</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 人氣推薦 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
-                                            <span>人氣推薦</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-4.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>香汁蓮子豆咖哩</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 260</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 人氣推薦 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
-                                            <span>人氣推薦</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-7.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>燒烤咖哩雞</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 350</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 新品上市 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center new-ribbon-bg">
-                                            <span>新品上市</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/pumpkin-soup.jpg);">
-                                        </div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>孜然南瓜湯</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 70</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 新品上市 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center new-ribbon-bg">
-                                            <span>新品上市</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-10.jpg);">
-                                        </div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>腰果優格咖哩雞</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 350</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
                                 </div>
                             </div>
-                            <!-- pagination -->
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination pagination-lg justify-content-center my-5">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 本日精選 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
+                                        <span>本日精選</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-6.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>椰汁咖哩魚</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 300</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 本日精選 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
+                                        <span>本日精選</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-8.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>香料雞</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 320</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 人氣推薦 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
+                                        <span>人氣推薦</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-1.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>主廚羊肉</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 320</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 人氣推薦 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
+                                        <span>人氣推薦</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-3.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>辛辣咖哩蝦</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 350</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 人氣推薦 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
+                                        <span>人氣推薦</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-2.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>香料扁豆咖哩</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 240</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 人氣推薦 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
+                                        <span>人氣推薦</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-4.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>香汁蓮子豆咖哩</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 260</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 人氣推薦 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
+                                        <span>人氣推薦</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-7.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>燒烤咖哩雞</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 350</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 新品上市 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center new-ribbon-bg">
+                                        <span>新品上市</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/pumpkin-soup.jpg);">
+                                    </div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>孜然南瓜湯</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 70</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 新品上市 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center new-ribbon-bg">
+                                        <span>新品上市</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-10.jpg);">
+                                    </div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>腰果優格咖哩雞</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 350</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
                         </div>
+                        <!-- pagination -->
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination pagination-lg justify-content-center my-5">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <!-- 頁面：本日精選 -->
                     <div class="tab-pane" id="list-today" role="tabpanel" aria-labelledby="list-today-list">
                         <!-- item-card -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 本日精選 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
-                                            <span>本日精選</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-5.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>葫蘆巴風味羊肉</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 350</strong></p>
-                                                </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 本日精選 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
+                                        <span>本日精選</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-5.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>葫蘆巴風味羊肉</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 350</strong></p>
                                             </div>
                                         </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 本日精選 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
-                                            <span>本日精選</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-6.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>椰汁咖哩魚</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 300</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 本日精選 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
-                                            <span>本日精選</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-8.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>香料雞</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 320</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
                                 </div>
                             </div>
-                            <!-- pagination -->
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination pagination-lg justify-content-center my-5">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 本日精選 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
+                                        <span>本日精選</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-6.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>椰汁咖哩魚</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 300</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 本日精選 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center">
+                                        <span>本日精選</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-8.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>香料雞</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 320</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
                         </div>
+                        <!-- pagination -->
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination pagination-lg justify-content-center my-5">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <!-- 頁面：人氣推薦 -->
                     <div class="tab-pane" id="list-popular" role="tabpanel" aria-labelledby="list-popular-list">
                         <!-- item-card -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 人氣推薦 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
-                                            <span>人氣推薦</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-1.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>主廚羊肉</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 320</strong></p>
-                                                </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 人氣推薦 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
+                                        <span>人氣推薦</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-1.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>主廚羊肉</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 320</strong></p>
                                             </div>
                                         </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 人氣推薦 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
-                                            <span>人氣推薦</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-3.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>辛辣咖哩蝦</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 350</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 人氣推薦 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
-                                            <span>人氣推薦</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-2.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>香料扁豆咖哩</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 240</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 人氣推薦 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
-                                            <span>人氣推薦</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-4.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>香汁蓮子豆咖哩</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 260</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 人氣推薦 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
-                                            <span>人氣推薦</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-7.jpg);"></div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>燒烤咖哩雞</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 350</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
                                 </div>
                             </div>
-                            <!-- pagination -->
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination pagination-lg justify-content-center my-5">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 人氣推薦 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
+                                        <span>人氣推薦</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-3.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>辛辣咖哩蝦</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 350</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 人氣推薦 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
+                                        <span>人氣推薦</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-2.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>香料扁豆咖哩</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 240</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 人氣推薦 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
+                                        <span>人氣推薦</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-4.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>香汁蓮子豆咖哩</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 260</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 人氣推薦 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-dark text-center d-flex justify-content-center align-items-center popular_ribbon-bg">
+                                        <span>人氣推薦</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-7.jpg);"></div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>燒烤咖哩雞</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 350</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
                         </div>
+                        <!-- pagination -->
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination pagination-lg justify-content-center my-5">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <!-- 頁面：新品上市 -->
                     <div class="tab-pane" id="list-new" role="tabpanel" aria-labelledby="list-new-list">
                         <!-- item-card -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 新品上市 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center new-ribbon-bg">
-                                            <span>新品上市</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/pumpkin-soup.jpg);">
-                                        </div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>孜然南瓜湯</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 70</strong></p>
-                                                </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 新品上市 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center new-ribbon-bg">
+                                        <span>新品上市</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/pumpkin-soup.jpg);">
+                                    </div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>孜然南瓜湯</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 70</strong></p>
                                             </div>
                                         </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-card">
-                                        <!-- 新品上市 緞帶 -->
-                                        <div
-                                            class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center new-ribbon-bg">
-                                            <span>新品上市</span>
-                                        </div>
-                                        <!-- 互動元件：愛心 -->
-                                        <button class="interactive">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <!-- 圖片 -->
-                                        <div class="item-card-pic" style="background-image: url(images/curry-10.jpg);">
-                                        </div>
-                                        <!-- 品名、價格 -->
-                                        <div class="item-card-info text-white">
-                                            <div class="row no-gutter">
-                                                <div class="col">
-                                                    <p>腰果優格咖哩雞</p>
-                                                </div>
-                                                <div class="col">
-                                                    <p><strong>NT&dollar; 350</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 「加入購物車」按鈕 -->
-                                        <button type="button"
-                                            class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
-                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
                                 </div>
                             </div>
-                            <!-- pagination -->
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination pagination-lg justify-content-center my-5">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                            <div class="col-md-6">
+                                <div class="item-card">
+                                    <!-- 新品上市 緞帶 -->
+                                    <div
+                                        class="item-card-ribbon text-white text-center d-flex justify-content-center align-items-center new-ribbon-bg">
+                                        <span>新品上市</span>
+                                    </div>
+                                    <!-- 互動元件：愛心 -->
+                                    <button class="interactive">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <!-- 圖片 -->
+                                    <div class="item-card-pic" style="background-image: url(images/curry-10.jpg);">
+                                    </div>
+                                    <!-- 品名、價格 -->
+                                    <div class="item-card-info text-white">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <p>腰果優格咖哩雞</p>
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>NT&dollar; 350</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 「加入購物車」按鈕 -->
+                                    <button type="button"
+                                        class="w-100 text-center text-white item-card-btn-cart">加入購物車</button>
+                                </div>
+                            </div>
                         </div>
+                        <!-- pagination -->
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination pagination-lg justify-content-center my-5">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -855,7 +849,7 @@
                             class="input-group-prepend bg-danger form-square-icon d-flex justify-content-center align-items-center">
                             <i class="fas fa-envelope text-white"></i>
                         </div>
-                        <input type="text" class="form-control form-square-input"
+                        <input type="email" class="form-control form-square-input"
                             aria-label="Amount (to the nearest dollar)">
                         <div class="input-group-append form-square-btn">
                             <button class="btn-danger"><i class="fas fa-arrow-right text-white"></i></button>

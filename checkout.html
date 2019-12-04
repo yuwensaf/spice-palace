@@ -84,104 +84,103 @@
         <div class="row cart-row">
             <!-- 區塊：收件資訊 -->
             <div class="col-lg-8 bg-info recipient-col">
-                <!-- 標題 + process-steps -->
-                <div class="row mx-5">
-                    <!-- 標題 收件資訊 -->
-                    <div class="col-6 px-0">
-                        <div class="cart-title text-white py-5">
-                            <h2 class="mb-0">收件資訊</h2>
-                        </div>
-                    </div>
-                    <!-- process-steps -->
-                    <div class="col-6 px-1 d-flex align-items-center">
-                        <div class="process-steps">
-                            <div class="process-steps-circle active"></div>
-                            <div class="process-steps-circle"></div>
-                            <div class="process-steps-circle"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 表單內容 -->
-                <form action="payment.html" class="recipient-form mx-5 needs-validation" novalidate>
-                    <div class="form-row text-white">
-                        <!-- 姓氏 -->
-                        <div class="form-group col-6">
-                            <label for="recipient-lastName">姓氏</label>
-                            <input type="text" id="recipient-lastName" class="form-control custom-input" placeholder="王"
-                                required>
-                            <div class="invalid-feedback">
-                                姓氏輸入錯誤
+                <div class="px-6">
+                    <!-- 標題 + process-steps -->
+                    <div class="form-row">
+                        <!-- 標題 收件資訊 -->
+                        <div class="col-6">
+                            <div class="cart-title text-white py-5">
+                                <h2 class="mb-0">收件資訊</h2>
                             </div>
                         </div>
-                        <!-- 名字 -->
-                        <div class="form-group col-6">
-                            <label for="recipient-firstName">名字</label>
-                            <input type="text" id="recipient-firstName" class="form-control custom-input" placeholder="小玉"
-                                required>
-                            <div class="invalid-feedback">
-                                名字輸入錯誤
+                        <!-- process-steps -->
+                        <div class="col-6 d-flex align-items-center">
+                            <div class="process-steps">
+                                <div class="process-steps-circle active"></div>
+                                <div class="process-steps-circle"></div>
+                                <div class="process-steps-circle"></div>
                             </div>
+                        </div>
+                    </div>
+                    <!-- 表單內容 -->
+                    <form action="payment.html" class="recipient-form needs-validation" novalidate>
+                        <div class="form-row text-white">
+                            <!-- 姓氏 -->
+                            <div class="form-group col-md-6">
+                                <label for="recipient-lastName">姓氏</label>
+                                <input type="text" id="recipient-lastName" class="form-control custom-input" placeholder="王"
+                                    required>
+                                <div class="invalid-feedback">
+                                    姓氏輸入錯誤
+                                </div>
+                            </div>
+                            <!-- 名字 -->
+                            <div class="form-group col-md-6">
+                                <label for="recipient-firstName">名字</label>
+                                <input type="text" id="recipient-firstName" class="form-control custom-input"
+                                    placeholder="小玉" required>
+                                <div class="invalid-feedback">
+                                    名字輸入錯誤
+                                </div>
+                            </div>    
                         </div>
                         <!-- 電話 -->
-                        <div class="form-group col-12">
+                        <div class="form-group text-white">
                             <label for="recipient-tel">電話</label>
-                            <input type="text" id="recipient-tel" class="form-control custom-input"
+                            <input type="tel" id="recipient-tel" class="form-control custom-input"
                                 placeholder="0912-345-678" required>
                             <div class="invalid-feedback">
                                 電話輸入錯誤
                             </div>
                         </div>
-                    </div>
-                    <!-- 地址 -->
-                    <div class="form-row text-white">                        
-                        <div class="form-group col-6">
-                            <label for="recipient-city">地址</label>
-                            <select name="city" id="recipient-city" class="form-control custom-input" required>
-                                <option value="">-請選擇-</option>
-                                <option value="台北市">台北市</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                請選擇城市
+                        <!-- 地址 -->
+                        <div class="form-row text-white">
+                            <div class="form-group col-md-6">
+                                <label for="recipient-city">地址</label>
+                                <select name="city" id="recipient-city" class="form-control custom-input custom-select" required>
+                                    <option value="">-請選擇-</option>
+                                    <option value="台北市">台北市</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    請選擇城市
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 form-group-margin">
+                                <select name="section" id="recipient-section" class="form-control custom-input custom-select" required>
+                                    <option value="">-請選擇-</option>
+                                    <option value="內湖區">內湖區</option>
+                                    <option value="南港區">南港區</option>
+                                    <option value="木柵區">木柵區</option>
+                                    <option value="士林區">士林區</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    請選擇區域
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group col-6 d-flex flex-column justify-content-end">
-                            <select name="section" id="recipient-section" class="form-control custom-input" required>
-                                <option value="">-請選擇-</option>
-                                <option value="內湖區">內湖區</option>
-                                <option value="南港區">南港區</option>
-                                <option value="木柵區">木柵區</option>
-                                <option value="士林區">士林區</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                請選擇區域
-                            </div>
-                        </div>
-                        <div class="form-group col-12">
+                        <div class="form-group">
                             <input type="text" id="recipient-address" class="form-control custom-input"
                                 placeholder="開心路 75 號" required>
                             <div class="invalid-feedback">
                                 地址輸入錯誤
                             </div>
                         </div>
-                    </div>
-                    <!-- 按鈕 -->
-                    <div class="form-row mx-0 mt-4 mb-5">
-                        <!-- 按鈕：上一步 -->
-                        <div class="col-6">
-                            <a href="cart.html"
-                                class="bg-danger text-white text-center d-block py-3 custom-checkout-btn">上一步</a>
+                        <!-- 按鈕 -->
+                        <div class="form-row mt-4 mb-5">
+                            <!-- 按鈕：上一步 -->
+                            <div class="col-6">
+                                <a href="cart.html"
+                                    class="bg-danger text-white text-center d-block py-3 custom-checkout-btn">上一步</a>
+                            </div>
+                            <!-- 按鈕：下一步 -->
+                            <div class="col-6">
+                                <button type="submit"
+                                    class="bg-danger text-white text-center w-100 py-3 custom-checkout-btn">下一步</button>
+                            </div>
                         </div>
-                        <!-- 按鈕：下一步 -->
-                        <div class="col-6">
-                            <button type="submit"
-                                class="bg-danger text-white text-center w-100 py-3 custom-checkout-btn">下一步</button>
-                        </div>
-                    </div>
+                    </form>
+                </div>
     
-    
-    
-    
-                </form>
             </div>
             <!-- 右側區塊 -->
             <div class="col-lg-4 px-0 d-none d-lg-inline">
@@ -281,7 +280,7 @@
                             class="input-group-prepend bg-danger form-square-icon d-flex justify-content-center align-items-center">
                             <i class="fas fa-envelope text-white"></i>
                         </div>
-                        <input type="text" class="form-control form-square-input"
+                        <input type="email" class="form-control form-square-input"
                             aria-label="Amount (to the nearest dollar)">
                         <div class="input-group-append form-square-btn">
                             <button class="btn-danger"><i class="fas fa-arrow-right text-white"></i></button>

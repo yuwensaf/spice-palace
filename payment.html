@@ -84,132 +84,126 @@
         <div class="row cart-row">
             <!-- 區塊：付款資訊 -->
             <div class="col-lg-8 bg-info recipient-col">
-                <!-- 標題 + process-steps -->
-                <div class="row mx-5">
-                    <!-- 標題 付款資訊 -->
-                    <div class="col-6 px-0">
-                        <div class="cart-title text-white py-5">
-                            <h2 class="mb-0">付款資訊</h2>
+                <div class="container px-6">
+                    <!-- 標題 + process-steps -->
+                    <div class="row">
+                        <!-- 標題 付款資訊 -->
+                        <div class="col-6">
+                            <div class="cart-title text-white py-5">
+                                <h2 class="mb-0">付款資訊</h2>
+                            </div>
+                        </div>
+                        <!-- process-steps -->
+                        <div class="col-6 d-flex align-items-center">
+                            <div class="process-steps">
+                                <div class="process-steps-circle checked"><i class="fas fa-check"></i></div>
+                                <div class="process-steps-circle active"></div>
+                                <div class="process-steps-circle"></div>
+                            </div>
                         </div>
                     </div>
-                    <!-- process-steps -->
-                    <div class="col-6 px-1 d-flex align-items-center">
-                        <div class="process-steps">
-                            <div class="process-steps-circle checked"><i class="fas fa-check"></i></div>
-                            <div class="process-steps-circle active"></div>
-                            <div class="process-steps-circle"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 表單內容 -->
-                <form action="invoice.html" class="recipient-form mx-5 needs-validation" novalidate>
-                    <!-- 信用卡卡號 -->
-                    <div class="form-row text-white">
-                        <div class="form-group col-12">
-                            <label for="payment-cardNumber">信用卡卡號</label>
-                            <div class="input-group mb-3">
-                                <input type="text" id="payment-cardNumber" class="form-control custom-input"
-                                    placeholder="9012-3456-7890-1234" aria-label="9012-3456-7890-1234"
-                                    aria-describedby="basic-addon2" required>
-                                <div class="input-group-append">
-                                    <span class="input-group-text" id="basic-addon2">
-                                        <i class="far fa-credit-card"></i>
-                                    </span>
+                    <!-- 表單內容 -->
+                    <form action="invoice.html" class="recipient-form needs-validation" novalidate>
+                        <!-- 信用卡卡號 -->
+                            <div class="form-group text-white">
+                                <label for="payment-cardNumber">信用卡卡號</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" id="payment-cardNumber" class="form-control custom-input"
+                                        placeholder="9012-3456-7890-1234" aria-label="9012-3456-7890-1234"
+                                        aria-describedby="basic-addon2" required>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2">
+                                            <i class="far fa-credit-card"></i>
+                                        </span>
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        請輸入信用卡卡號
+                                    </div>
                                 </div>
+                            </div>                        
+                        <!-- 持卡人姓名 -->
+                        <div class="form-row text-white">
+                            <!-- 姓氏 -->
+                            <div class="form-group col-md-6">
+                                <label for="payment-lastName">持卡人姓名</label>
+                                <input type="text" id="payment-lastName" class="form-control custom-input" placeholder="王"
+                                    required>
                                 <div class="invalid-feedback">
-                                    請輸入信用卡卡號
+                                    請輸入姓氏
+                                </div>
+                            </div>
+                            <!-- 名字 -->
+                            <div class="form-group col-md-6 form-group-margin">
+                                <input type="text" class="form-control custom-input" placeholder="小玉" required>
+                                <div class="invalid-feedback">
+                                    請輸入名字
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- 持卡人姓名 -->
-                    <div class="form-row text-white">
-                        <!-- 姓氏 -->
-                        <div class="form-group col-6">
-                            <label for="payment-lastName">持卡人姓名</label>
-                            <input type="text" id="payment-lastName" class="form-control custom-input" placeholder="王"
-                                required>
-                            <div class="invalid-feedback">
-                                請輸入姓氏
+                        <!-- 有效期限 -->
+                        <div class="form-row text-white">
+                            <!-- 月 -->
+                            <div class="form-group col-md-6">
+                                <label for="payment-expMonth">有效期限</label>
+                                <select name="payment-expMonth" id="payment-expMonth" class="form-control custom-input custom-select"
+                                    required>
+                                    <option value="">月</option>
+                                    <option value="1 月">1 月</option>
+                                    <option value="2 月">2 月</option>
+                                    <option value="3 月">3 月</option>
+                                    <option value="4 月">4 月</option>
+                                    <option value="5 月">5 月</option>
+                                    <option value="6 月">6 月</option>
+                                    <option value="7 月">7 月</option>
+                                    <option value="8 月">8 月</option>
+                                    <option value="9 月">9 月</option>
+                                    <option value="10 月">10 月</option>
+                                    <option value="11 月">11 月</option>
+                                    <option value="12 月">12 月</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    請選擇月份
+                                </div>
+                            </div>
+                            <!-- 年 -->
+                            <div class="form-group col-md-6 form-group-margin">
+                                <select name="payment-expYear" class="form-control custom-input custom-select" required>
+                                    <option value="">年</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    請選擇年份
+                                </div>
                             </div>
                         </div>
-                        <!-- 名字 -->
-                        <div class="form-group col-6 d-flex flex-column justify-content-end">
-                            <input type="text" class="form-control custom-input" placeholder="小玉" required>
-                            <div class="invalid-feedback">
-                                請輸入名字
+                        <!-- 安全碼 -->
+                            <div class="form-group text-white">
+                                <label for="payment-code">安全碼</label>
+                                <input type="text" id="payment-code" class="form-control custom-input" placeholder="123"
+                                    required>
+                                <div class="invalid-feedback">
+                                    請輸入安全碼
+                                </div>
+                            </div>
+    
+                        <!-- 按鈕 -->
+                        <div class="form-row mt-4 mb-5">
+                            <!-- 按鈕：上一步 -->
+                            <div class="col-6">
+                                <a href="checkout.html"
+                                    class="bg-danger text-white text-center d-block py-3 custom-checkout-btn">上一步</a>
+                            </div>
+                            <!-- 按鈕：下一步 -->
+                            <div class="col-6">
+                                <button type="submit"
+                                    class="bg-danger text-white text-center w-100 py-3 custom-checkout-btn">下一步</button>
                             </div>
                         </div>
-                    </div>
-                    <!-- 有效期限 -->
-                    <div class="form-row text-white">
-                        <!-- 月 -->
-                        <div class="form-group col-6">
-                            <label for="payment-expMonth">有效期限</label>
-                            <select name="payment-expMonth" id="payment-expMonth" class="form-control custom-input"
-                                required>
-                                <option value="">月</option>
-                                <option value="1 月">1 月</option>
-                                <option value="2 月">2 月</option>
-                                <option value="3 月">3 月</option>
-                                <option value="4 月">4 月</option>
-                                <option value="5 月">5 月</option>
-                                <option value="6 月">6 月</option>
-                                <option value="7 月">7 月</option>
-                                <option value="8 月">8 月</option>
-                                <option value="9 月">9 月</option>
-                                <option value="10 月">10 月</option>
-                                <option value="11 月">11 月</option>
-                                <option value="12 月">12 月</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                請選擇月份
-                            </div>
-                        </div>
-                        <!-- 年 -->
-                        <div class="form-group col-6 d-flex flex-column justify-content-end">
-                            <select name="payment-expYear" class="form-control custom-input" required>
-                                <option value="">年</option>
-                                <option value="2020">2020</option>
-                                <option value="2021">2021</option>
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                請選擇年份
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 安全碼 -->
-                    <div class="form-row text-white">
-                        <div class="form-group col-12">
-                            <label for="payment-code">安全碼</label>
-                            <input type="text" id="payment-code" class="form-control custom-input" placeholder="123"
-                                required>
-                            <div class="invalid-feedback">
-                                請輸入安全碼
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- 按鈕 -->
-                    <div class="form-row mx-0 mt-4 mb-5">
-                        <!-- 按鈕：上一步 -->
-                        <div class="col-6">
-                            <a href="checkout.html"
-                                class="bg-danger text-white text-center d-block py-3 custom-checkout-btn">上一步</a>
-                        </div>
-                        <!-- 按鈕：下一步 -->
-                        <div class="col-6">
-                            <button type="submit"
-                                class="bg-danger text-white text-center w-100 py-3 custom-checkout-btn">下一步</button>
-                        </div>
-                    </div>
-    
-    
-    
-    
-                </form>
+                    </form>
+                </div>
             </div>
             <!-- 右側區塊 -->
             <div class="col-lg-4 px-0 d-none d-lg-inline">
@@ -310,7 +304,7 @@
                             class="input-group-prepend bg-danger form-square-icon d-flex justify-content-center align-items-center">
                             <i class="fas fa-envelope text-white"></i>
                         </div>
-                        <input type="text" class="form-control form-square-input"
+                        <input type="email" class="form-control form-square-input"
                             aria-label="Amount (to the nearest dollar)">
                         <div class="input-group-append form-square-btn">
                             <button class="btn-danger"><i class="fas fa-arrow-right text-white"></i></button>

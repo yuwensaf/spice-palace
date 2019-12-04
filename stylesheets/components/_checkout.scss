@@ -12,14 +12,23 @@
     height: 58px;
     font-size: 1.1rem;
     letter-spacing: 1.2;
-    background-color: #FFEA83;
-    border: 1px solid #FFEA83 !important;
+    background-color: $accent;
+    border: 1px solid $accent !important;
     border-radius: 0 !important;
     color: $dark !important;
     &:focus{
         background-color: $light;
         border: 1px solid $light !important;
         box-shadow: none;
+    }
+}
+.custom-select{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+}
+.form-group-margin{
+    @include pad{
+        margin-top: 38px;
     }
 }
 .custom-checkout-btn{
@@ -46,15 +55,15 @@
 }
 .invoice-tab-item{
     background-color: $info;
-    border: 1px solid #FFEA83;
-    color: #FFEA83;
+    border: 1px solid $accent;
+    color: $accent;
     font-size: $h4-font-size;
     height: 58px;
     text-align: center;
     &.active, &:hover{
-        background-color: #FFEA83;
+        background-color: $accent;
         color: $info;
-        border: 1px solid #FFEA83;
+        border: 1px solid $accent;
     }
 }
 .invoice-checkbox-label{
@@ -64,7 +73,7 @@
 // success 頁面
 .success-container{
     height: 518px;
-    background-image: url(../../images/success.jpg);
+    background-image: url(../images/success.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

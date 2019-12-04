@@ -111,41 +111,46 @@
     </nav>
 
     <!-- header -->
-    <header>
+    <header class="header_layout">
         <div class="banner" style="background-image: url(images/banner.jpg);"></div>
         <!-- 三塊方形 -->
-        <div class="row justify-content-center no-gutter" style="height: 256px; margin-top: -90px;">
-            <div class="col d-flex justify-content-center align-items-center frosted-wrap"
-                style="background-image: url(images/curry-1.jpg); margin-right: 2px;">
-                <a href="#">
-                    <div class="frostedGlass-1">
-                        <div class="frosted-bg">
-                            <span class="h3 text-center">本日精選</span>
+        <!-- 最外層要用「.container」包住 -->
+        <div class="container">
+            <!-- 裡面再放「.row」 -->
+            <div class="row justify-content-center" style="height: 256px; margin-top: -90px;">
+                <div class="col d-flex justify-content-center align-items-center frosted-wrap"
+                    style="background-image: url(images/curry-1.jpg); margin-right: 2px;">
+                    <a href="#">
+                        <div class="frostedGlass-1">
+                            <div class="frosted-bg">
+                                <span class="h3 text-center">本日精選</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col d-flex justify-content-center align-items-center frosted-wrap"
-                style="background-image: url(images/curry-2.jpg); margin-right: 2px;">
-                <a href="">
-                    <div class="frostedGlass-2">
-                        <div class="frosted-bg">
-                            <span class="h3">人氣推薦</span>
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center frosted-wrap"
+                    style="background-image: url(images/curry-2.jpg); margin-right: 2px;">
+                    <a href="">
+                        <div class="frostedGlass-2">
+                            <div class="frosted-bg">
+                                <span class="h3">人氣推薦</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col d-flex justify-content-center align-items-center frosted-wrap"
-                style="background-image: url(images/curry-4.jpg);">
-                <a href="">
-                    <div class="frostedGlass-3">
-                        <div class="frosted-bg">
-                            <span class="h3">新品上市</span>
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center frosted-wrap"
+                    style="background-image: url(images/curry-4.jpg);">
+                    <a href="">
+                        <div class="frostedGlass-3">
+                            <div class="frosted-bg">
+                                <span class="h3">新品上市</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
+    
     </header>
 
     <!-- section -->
@@ -221,7 +226,7 @@
                     <div class="item-card-pic" style="background-image: url(images/curry-5.jpg);"></div>
                     <!-- 品名、價格 -->
                     <div class="item-card-info text-white">
-                        <div class="row no-gutter">
+                        <div class="row no-gutters">
                             <div class="col">
                                 <p>葫蘆巴風味羊肉</p>
                             </div>
@@ -248,7 +253,7 @@
                     <div class="item-card-pic" style="background-image: url(images/curry-6.jpg);"></div>
                     <!-- 品名、價格 -->
                     <div class="item-card-info text-white">
-                        <div class="row no-gutter">
+                        <div class="row no-gutters">
                             <div class="col">
                                 <p>椰汁咖哩魚</p>
                             </div>
@@ -275,7 +280,7 @@
                     <div class="item-card-pic" style="background-image: url(images/curry-8.jpg);"></div>
                     <!-- 品名、價格 -->
                     <div class="item-card-info text-white">
-                        <div class="row no-gutter">
+                        <div class="row no-gutters">
                             <div class="col">
                                 <p>香料雞</p>
                             </div>
@@ -306,7 +311,7 @@
                         <div class="input-group-prepend bg-danger form-square-icon d-flex justify-content-center align-items-center">
                             <i class="fas fa-envelope text-white"></i>
                         </div>
-                        <input type="text" class="form-control form-square-input" aria-label="Amount (to the nearest dollar)">
+                        <input type="email" class="form-control form-square-input" aria-label="Amount (to the nearest dollar)">
                         <div class="input-group-append form-square-btn">
                             <button class="btn-danger"><i class="fas fa-arrow-right text-white"></i></button>
                         </div>

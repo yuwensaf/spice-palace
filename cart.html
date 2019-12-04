@@ -83,124 +83,131 @@
     <section class="container pt-5">
         <div class="row cart-row">
             <!-- 區塊：您的購物車 -->
-            <div class="col-md-8 bg-light col-cart">
-                <!-- 標題 您的購物車 -->
-                <div class="cart-title bg-info text-center text-white py-3">
-                    <h3 class="mb-0">您的購物車</h3>
-                </div>
-                <!-- 購物車內容 -->
-                <div class="container py-2">
-                    <!-- 第一個商品 -->
-                    <div class="d-flex py-5">
-                        <!-- 商品圖片 -->
-                        <div class="cart-item-img flex-grow-1 flex-sm-grow-0 mr-3"
-                            style="background-image: url(images/pumpkin-soup.jpg);"></div>
-                        <!-- 商品內容 -->
-                        <div class="cart-item-content d-md-flex align-items-md-center">
-                            <!-- 品名 + 單價 -->
-                            <div class="cart-item-info mr-md-auto mb-md-0">
-                                <p class="cart-item-name">孜然南瓜湯</p>
-                                <p>NT&dollar; 70</p>
-                            </div>
-                            <!-- 數量計數器 -->
-                            <div class="input-group cart-count mb-md-0">
-                                <div class="input-group-prepend">
-                                    <button class="btn bg-info text-white cart-count-btn" type="button"
-                                        id="button-addon1">&minus;</button>
-                                </div>
-                                <input type="text" class="form-control cart-count-input text-center" placeholder=""
-                                    aria-label="Example text with button addon" aria-describedby="button-addon1" value="3">
-                                <div class="input-group-append">
-                                    <button class="btn bg-info text-white cart-count-btn" type="button"
-                                        id="button-addon2">&plus;</button>
-                                </div>
-                            </div>
-                            <!-- 商品總金額 -->
-                            <div class="cart-item-total text-right">
-                                <p>NT&dollar; 210</p>
-                            </div>
-                            <!-- 垃圾桶 -->
-                            <a href="#" class="d-none d-md-flex" data-toggle="modal" data-target="#removeModal"
-                                data-title="孜然南瓜湯" data-quantity="&nbsp;3 份" data-backdrop="false">
-                                <i class="fas fa-trash-alt"></i>
-                            </a>
-                        </div>
+            <div class="col-md-8">
+                <div class="bg-light">
+                    <!-- 標題 您的購物車 -->
+                    <div class="cart-title bg-info text-center text-white py-3">
+                        <h3 class="mb-0">您的購物車</h3>
                     </div>
-    
-                    <hr class="d-md-none">
-    
-                    <!-- 第二個商品 -->
-                    <div class="d-flex py-5">
-                        <!-- 商品圖片 -->
-                        <div class="cart-item-img flex-grow-1 flex-sm-grow-0 mr-3"
-                            style="background-image: url(images/curry-5.jpg);">
-                        </div>
-                        <!-- 商品內容 -->
-                        <div class="cart-item-content d-md-flex align-items-md-center">
-                            <!-- 品名 + 單價 -->
-                            <div class="cart-item-info mr-md-auto mb-md-0">
-                                <p class="cart-item-name">葫蘆巴風味羊肉</p>
-                                <p>NT&dollar; 350</p>
-                            </div>
-                            <!-- 數量計數器 -->
-                            <div class="input-group cart-count mb-md-0">
-                                <div class="input-group-prepend">
-                                    <button class="btn bg-info text-white cart-count-btn" type="button"
-                                        id="button-addon1">&minus;</button>
+                    <!-- 購物車內容 -->
+                    <div class="container py-2">
+                        <!-- 第一個商品 -->
+                        <div class="d-flex py-5">
+                            <!-- 商品圖片 -->
+                            <div class="cart-item-img flex-grow-1 flex-sm-grow-0 mr-3"
+                                style="background-image: url(images/pumpkin-soup.jpg);"></div>
+                            <!-- 商品內容 -->
+                            <div class="cart-item-content d-md-flex align-items-md-center">
+                                <!-- 品名 + 單價 -->
+                                <div class="cart-item-info mr-md-auto mb-md-0">
+                                    <p class="cart-item-name">孜然南瓜湯</p>
+                                    <p>NT&dollar; 70</p>
                                 </div>
-                                <input type="text" class="form-control cart-count-input text-center" placeholder=""
-                                    aria-label="Example text with button addon" aria-describedby="button-addon1" value="1">
-                                <div class="input-group-append">
-                                    <button class="btn bg-info text-white cart-count-btn" type="button"
-                                        id="button-addon2">&plus;</button>
+                                <!-- 數量計數器 -->
+                                <div class="input-group cart-count mb-md-0">
+                                    <div class="input-group-prepend">
+                                        <button class="btn bg-info text-white cart-count-btn" type="button"
+                                            id="button-addon1">&minus;</button>
+                                    </div>
+                                    <input type="text" class="form-control cart-count-input text-center" placeholder=""
+                                        aria-label="Example text with button addon" aria-describedby="button-addon1"
+                                        value="3">
+                                    <div class="input-group-append">
+                                        <button class="btn bg-info text-white cart-count-btn" type="button"
+                                            id="button-addon2">&plus;</button>
+                                    </div>
                                 </div>
+                                <!-- 商品總金額 -->
+                                <div class="cart-item-total text-right">
+                                    <p>NT&dollar; 210</p>
+                                </div>
+                                <!-- 垃圾桶 -->
+                                <a href="#" class="d-none d-md-flex" data-toggle="modal" data-target="#removeModal"
+                                    data-title="孜然南瓜湯" data-quantity="&nbsp;3 份" data-backdrop="false">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
                             </div>
-                            <!-- 商品總金額 -->
-                            <div class="cart-item-total text-right">
-                                <p>NT&dollar; 350</p>
-                            </div>
-                            <!-- 垃圾桶 -->
-                            <a href="#" class="d-none d-md-flex" data-toggle="modal" data-target="#removeModal"
-                                data-title="葫蘆巴風味羊肉" data-quantity="&nbsp;1 份" data-backdrop="false">
-                                <i class="fas fa-trash-alt"></i>
-                            </a>
                         </div>
+    
+                        <hr class="d-md-none">
+    
+                        <!-- 第二個商品 -->
+                        <div class="d-flex py-5">
+                            <!-- 商品圖片 -->
+                            <div class="cart-item-img flex-grow-1 flex-sm-grow-0 mr-3"
+                                style="background-image: url(images/curry-5.jpg);">
+                            </div>
+                            <!-- 商品內容 -->
+                            <div class="cart-item-content d-md-flex align-items-md-center">
+                                <!-- 品名 + 單價 -->
+                                <div class="cart-item-info mr-md-auto mb-md-0">
+                                    <p class="cart-item-name">葫蘆巴風味羊肉</p>
+                                    <p>NT&dollar; 350</p>
+                                </div>
+                                <!-- 數量計數器 -->
+                                <div class="input-group cart-count mb-md-0">
+                                    <div class="input-group-prepend">
+                                        <button class="btn bg-info text-white cart-count-btn" type="button"
+                                            id="button-addon1">&minus;</button>
+                                    </div>
+                                    <input type="text" class="form-control cart-count-input text-center" placeholder=""
+                                        aria-label="Example text with button addon" aria-describedby="button-addon1"
+                                        value="1">
+                                    <div class="input-group-append">
+                                        <button class="btn bg-info text-white cart-count-btn" type="button"
+                                            id="button-addon2">&plus;</button>
+                                    </div>
+                                </div>
+                                <!-- 商品總金額 -->
+                                <div class="cart-item-total text-right">
+                                    <p>NT&dollar; 350</p>
+                                </div>
+                                <!-- 垃圾桶 -->
+                                <a href="#" class="d-none d-md-flex" data-toggle="modal" data-target="#removeModal"
+                                    data-title="葫蘆巴風味羊肉" data-quantity="&nbsp;1 份" data-backdrop="false">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <hr class="d-md-none">
+    
                     </div>
-    
-                    <hr class="d-md-none">
-    
                 </div>
             </div>
             <!-- 區塊：訂單摘要 -->
-            <div class="col-md-4 px-0 order-col bg-light">
-                <!-- 標題 -->
-                <div class="text-center text-dark pt-3 px-3">
-                    <h3>訂單摘要</h3>
+            <div class="col-md-4">
+                <div class="bg-light">
+                    <!-- 標題 -->
+                    <div class="text-center text-dark pt-3 px-3">
+                        <h3>訂單摘要</h3>
+                    </div>
+    
+                    <hr class="mx-3" style="border-top: 1px solid #444444;">
+    
+                    <!-- 表格 -->
+                    <table class="text-dark order-table">
+                        <tbody>
+                            <tr>
+                                <td>小計</td>
+                                <td>NT&dollar; 560</td>
+                            </tr>
+                            <tr>
+                                <td>運費</td>
+                                <td>NT&dollar; 150</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>總計</td>
+                                <td>NT&dollar; 710</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <!-- 結帳按鈕 -->
+                    <a href="checkout.html" class="d-block bg-danger text-white text-center py-3 mt-3 checkout-btn">結帳</a>
                 </div>
     
-                <hr class="mx-3" style="border-top: 1px solid #444444;">
-    
-                <!-- 表格 -->
-                <table class="text-dark order-table">
-                    <tbody>
-                        <tr>
-                            <td>小計</td>
-                            <td>NT&dollar; 560</td>
-                        </tr>
-                        <tr>
-                            <td>運費</td>
-                            <td>NT&dollar; 150</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>總計</td>
-                            <td>NT&dollar; 710</td>
-                        </tr>
-                    </tfoot>
-                </table>
-                <!-- 結帳按鈕 -->
-                <a href="checkout.html" class="d-block bg-danger text-white text-center py-3 mt-3 checkout-btn">結帳</a>
             </div>
         </div>
     </section>
@@ -235,7 +242,7 @@
                             class="input-group-prepend bg-danger form-square-icon d-flex justify-content-center align-items-center">
                             <i class="fas fa-envelope text-white"></i>
                         </div>
-                        <input type="text" class="form-control form-square-input"
+                        <input type="email" class="form-control form-square-input"
                             aria-label="Amount (to the nearest dollar)">
                         <div class="input-group-append form-square-btn">
                             <button class="btn-danger"><i class="fas fa-arrow-right text-white"></i></button>

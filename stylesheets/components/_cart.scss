@@ -4,10 +4,6 @@
         margin-bottom: 40px;
     }
 }
-.col-cart{
-    padding-left: 0;
-    padding-right: 0;
-}
 .cart-item-img{
     height: 110px;
     background-size: cover;
@@ -89,13 +85,6 @@
     }
 }
 
-.order-col{
-    @include pad{
-        height: 258px;
-        max-width: 30%;
-        margin-left: 2%;
-    }
-}
 .order-table{
     width: 100%;
     td{
