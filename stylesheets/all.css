@@ -11923,25 +11923,26 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .landingPage-section {
-  height: 800px;
+  min-height: 910px;
   margin-bottom: 180px;
 }
 
 @media (min-width: 375px) {
   .landingPage-section {
-    height: 740px;
+    min-height: 820px;
   }
 }
 
 @media (min-width: 576px) {
   .landingPage-section {
-    height: 680px;
+    min-height: 670px;
   }
 }
 
 @media (min-width: 768px) {
   .landingPage-section {
-    height: 580px;
+    min-height: initial;
+    height: 600px;
   }
 }
 
