@@ -1,100 +1,97 @@
-
-.landingPage-section{
-    min-height: 910px;
+.landingPage-section {
+  margin-bottom: 140px;
+  @include sm {
     margin-bottom: 180px;
-    @include iphone6{
-        min-height: 820px;
-    }
-    @include sm{
-        min-height: 670px;
-    }
-    @include pad{
-        min-height: initial;
-        height: 600px;
-    }
-    @include lg{
-        height: 420px;
-        margin-bottom: 120px !important;
-    }
+  }
+  @include lg {
+    margin-bottom: 220px;
+  }
 }
-.landingPage-section-pic{
-    height: 360px;
-    background-size: cover;
-    background-position: center center;
-    @include lg{
-        height: 480px;
-    }
+.landingPage-section_container {
+  display: flex;
+  justify-content: center;
 }
-.landingPage-section-text_1{
-    @include lg{
-        writing-mode: vertical-rl;
-    }
-    p{
-        line-height: 2;
-        @include lg{
-            margin-right: 40px;
-        }
-        @include xl{
-            margin-right: 50px;
-        }
-    }
+.landingPage-section_row {
+  width: 85%;
 }
-.landingPage-section-title_1{    
-    margin-top: -120px;
-    text-align: center;
-    letter-spacing: 7.5;
-    @include lg{
-        writing-mode: vertical-rl;
-        text-align: left;
-        margin-top: 0;
-    }
+.landingPage-section_content {
+  @include lg {
+    padding-left: 60px;
+    padding-right: 0px;
+  }
 }
-.landingPage-section-title_2{
-    margin-top: -120px;
-    text-align: center;
-    letter-spacing: 7.5;
-    @include lg{
-        writing-mode: vertical-rl;
-        text-align: left;
-        margin-top: 0;
-        display: flex;
-        align-items: flex-end;
-    }
+.landingPage-section-pic {
+  height: 360px;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 24px;
+  @include lg {
+    height: 520px;
+    margin-top: -40px;
+  }
+  @include xl {
+    height: 480px;
+  }
 }
-.landingPage-section-text_2{
-    @include lg{
-        writing-mode: vertical-rl;
-        display: flex;
-        align-items: flex-end;
+.landingPage-section-text {
+  color: $dark;
+  p {
+    font-size: 1rem;
+    line-height: 2;
+    @include sm {
+      font-size: 1.2rem;
     }
-    p{
-        line-height: 2;
-        @include lg{
-            margin-right: 40px;
-        }
-        @include xl{
-            margin-right: 50px;
-        }
+    @include lg {
+      margin-right: 40px;
+      font-size: 1.2rem;
     }
+    @include xl {
+      margin-right: 50px;
+    }
+  }
+}
+.landingPage-section-title {
+  margin-top: -80px;
+  margin-bottom: 40px;
+  letter-spacing: 1.9px;
+  @include sm {
+    margin-top: -100px;
+  }
+  @include pad {
+    margin-top: -100px;
+  }
+  @include lg {
+    text-align: left;
+    margin-top: 0;
+  }
 }
 
-.landingPage-title-fontSize{
+.landingPage-title-fontSize {
+  font-size: 1.2rem;
+  @include sm {
+    font-size: 1.7rem;
+  }
+  @include lg {
+    font-size: 2.2rem;
+  }
+}
+.landingPage-subtitle-fontSize {
+  font-size: 1rem;
+  @include sm {
     font-size: 1.5rem;
-    @include pad{
-        font-size: 2rem;
-    }
+  }
+  @include lg {
+    font-size: 2rem;
+  }
+}
+.landingPage-subtitle {
+  color: $secondary;
 }
 
 // 超出邊界的效果：使用負值的 margin
-.landingPage-section-break{
-    @include lg{
-        margin-top: -30px;
-        margin-bottom: -30px;
-    }
-
+.landingPage-section-break-title {
+  color: $primary;
+  @include lg {
+    margin-top: -110px;
+  }
 }
-
-
-
-
-

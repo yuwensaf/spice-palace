@@ -1,52 +1,59 @@
-
-.item-card{
-    position: relative;
+.item-card {
+  position: relative;
+  margin-bottom: 30px;
+  @include pad {
     margin-bottom: 30px;
-    @include pad{
-        margin-bottom: 30px;       
+  }
+}
+.item-card-ribbon {
+  position: absolute;
+  left: 21px;
+  width: 130px;
+  height: 37.8px;
+  background-color: $danger;
+  color: $dark;
+}
+.popular_ribbon-bg {
+  background-color: $warning;
+}
+.new-ribbon-bg {
+  background-color: #ed6f83;
+}
+.item-card-pic {
+  height: 315px;
+  background-size: cover;
+  background-position: center center;
+}
+.item-card-info {
+  background-color: $primary;
+  color: $dark;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  p {
+    margin-top: 14px !important;
+    margin-bottom: 14px !important;
+    @include iphone6 {
+      font-size: $font-size-lg;
     }
+  }
 }
-.item-card-ribbon{
-    position: absolute;
-    left: 21px;
-    width: 37.8px;
-    height: 106.7px;
-    background-color: $danger;
-    writing-mode: vertical-rl;
-    letter-spacing: 5;
+.item-card-info_name {
+  text-align: left;
 }
-.popular_ribbon-bg{
+item-card-info_price {
+  text-align: center;
+}
+.item-card-btn-cart {
+  font-size: $font-size-lg;
+  height: 65px;
+  background-color: $secondary;
+  border: none;
+  transition: all 0.5s;
+  &:hover {
     background-color: $warning;
+  }
+  &:focus {
+    outline: none;
+  }
 }
-.new-ribbon-bg{
-    background-color: #ED6F83;
-}
-.item-card-pic{
-    height: 315px;
-    background-size: cover;
-    background-position: center center;
-}
-.item-card-info{
-    background-color: $info;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    p{
-        margin-top: 14px !important;
-        margin-bottom: 14px !important;
-        @include iphone6{
-            font-size: $font-size-lg;
-        }
-    }
-}
-.item-card-btn-cart{
-    font-size: $font-size-lg;
-    height: 65px;
-    background-color: $danger;
-    border: none;
-    &:hover{
-        background-color: #ED6F83;
-    }
-}
-
-

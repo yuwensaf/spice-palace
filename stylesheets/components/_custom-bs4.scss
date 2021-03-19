@@ -1,270 +1,285 @@
-
+.letter-spacing-title {
+  letter-spacing: 1.9px;
+}
+.letter-spacing-content {
+  letter-spacing: 1.3px;
+}
 // navbar
-.navbar-brand:hover{
+.navbar-brand:hover {
+  color: $primary;
+}
+.nav-logo {
+  margin: 0 auto;
+}
+.btn-cart {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  span {
+    position: absolute;
+    top: -10px;
+    right: -13px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  i {
+    transition: all 0.3s;
+  }
+  i:hover {
+    color: $warning !important;
+  }
+  @include pad {
+    margin-left: 49px;
+  }
+}
+.navbar-collapse {
+  @include pad {
+    justify-content: flex-end;
+  }
+  .nav-item {
+    padding: 0 25px;
+  }
+  .nav-link {
+    border-bottom: 2px solid transparent;
+  }
+  .nav-link:hover {
     color: $primary;
-}
-.nav-logo{
-    margin: 0 auto;
-}
-.btn-cart{
-    background-color: transparent;
-    border: none;
-    position: relative;
-    span{
-        position: absolute;
-        top: -10px;
-        right: -13px;
-    }
-
-    &:focus{
-        outline: none;
-    }
-    i{
-        transition: all 0.3s;
-    }
-    i:hover{
-        color: $info !important;
-    }
-    @include pad{
-        margin-left: 49px;
-    }
-}
-.navbar-collapse{
-    @include pad{
-        justify-content: flex-end;
-    }
-    .nav-item{
-        padding: 0 25px;
-    }
-    .nav-link{
-        border-bottom: 2px solid transparent;
-    }
-    .nav-link:hover{
-        color: $primary;
-        border-bottom: 2px solid $primary;
-    }
-    .nav-active{
-        border-bottom: 2px solid $primary;
-    }
+    border-bottom: 2px solid $primary;
+  }
+  .nav-active {
+    border-bottom: 2px solid $primary;
+  }
 }
 
-.cart-menu{
-    width: 300px;
-    td:nth-of-type(1){
-        width: 10px;
-    }
-    td:nth-of-type(4){
-        text-align: right;       
-    }
+.cart-menu {
+  width: 300px;
+  td:nth-of-type(1) {
+    width: 10px;
+  }
+  td:nth-of-type(4) {
+    text-align: right;
+  }
 }
-.table a{
-    color: gray;
+.table a {
+  color: gray;
 }
-.table td{
-    padding: 0.5rem;
-    vertical-align: middle;
+.table td {
+  padding: 0.5rem;
+  vertical-align: middle;
 }
 
 // landing page - banner
-.landingPage-custom-title{
-    text-align: center;
-    letter-spacing: 7.5;
-    @include lg{
-        text-align: left;
-        writing-mode: vertical-rl;
-        margin: 0 auto;
-    }
+.landingPage-custom-title {
+  text-align: center;
+  letter-spacing: 7.5;
+  @include lg {
+    margin: 0 auto;
+  }
 }
 
 // landing page - subscribe
-.subscribe{
-    margin-top: 30px;
-    background-color: $warning;
-    .subscribe-text{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        @include pad{
-            justify-content: flex-start;
-            margin-bottom: 0;
-        }
+.subscribe {
+  margin-top: 30px;
+  background-color: $secondary;
+  .subscribe-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    @include pad {
+      justify-content: flex-start;
+      margin-bottom: 0;
     }
-    img{
-        width: 40px;
+  }
+  img {
+    width: 40px;
+  }
+  .subscribe-form {
+    @include pad {
+      display: flex;
+      justify-content: flex-end;
     }
-    .subscribe-form{
-        @include pad{
-            display: flex;
-            justify-content: flex-end;
-        }
-    }
+  }
 }
 
 // menu page
-.menu-custom-title{
-    text-align: center;
-    letter-spacing: 7.5;
-    background-color: rgba(255, 255, 255, .6);
-    padding: 20px;
-    font-size: $h5-font-size;
-    @include pad{
-        text-align: left;
-        writing-mode: vertical-rl;
-        margin: 0 auto;
-        font-size: $h4-font-size;
+.menu-custom-title {
+  margin: 0 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  font-size: $h6-font-size;
+  p {
+    margin: 0px;
+  }
+  @include sm {
+    font-size: $h4-font-size;
+    p {
+      margin: 0 20px;
     }
-    .title-break{
-        @include pad{
-            margin-bottom: 0;
-            margin-top: 30px;
-        }
+  }
+  @include pad {
+    font-size: $h3-font-size;
+    p {
+      margin: 0 60px;
     }
+  }
+  .title-break {
+    @include pad {
+      margin-bottom: 0;
+      margin-top: 30px;
+    }
+  }
 }
-.menu_list-group{
-    font-size: $h5-font-size;
+.menu_list-group {
+  font-size: $h5-font-size;
 }
 
-.page-link{
-    color: $info;
+.list-group-item.active {
+  color: $dark;
 }
-.page-item.active .page-link{
-    color: $white;
-    background-color: $info;
-    border-color: $info;
+
+.page-link {
+  color: $dark;
+}
+.page-item.active .page-link {
+  color: $dark;
+  background-color: $info;
+  border-color: $info;
 }
 
 // login page
-.login-secton{
-    @include pad{
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
+.login-secton {
+  @include pad {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
-.fastLogin-title{
-    font-size: $h5-font-size;
-    @include lg{
-        font-size: $h3-font-size;
-    }
+.fastLogin-title {
+  font-size: $h5-font-size;
+  @include lg {
+    font-size: $h3-font-size;
+  }
 }
 
-.login-box{
+.login-box {
+  background-color: $info;
+  .login-box-title {
     background-color: $info;
-    .login-box-title{
-        background-color: $info;
-    }
+  }
 }
-.social-btn{
-    width: 98%;
-    height: 56px;
+.social-btn {
+  width: 98%;
+  height: 56px;
+  background-color: $accent;
+  transition: all 0.3s;
+  border: none;
+  img {
+    width: 105px;
+  }
+  &:hover {
+    background-color: $warning;
+  }
+  &:focus {
+    outline: none !important;
+  }
+  @include pad {
+    margin-bottom: 20px;
+    background-color: $warning;
+    width: 80%;
+    &:hover {
+      background-color: $primary;
+    }
+  }
+}
+.login-form {
+  margin-bottom: 0px !important;
+}
+.login-input {
+  span {
+    padding: 20px;
+  }
+  .custom-input {
+    height: 58px;
     background-color: $accent;
-    transition: all 0.3s;
-    border: none;
-    img{
-        width: 105px;        
+    border: 1px solid $accent !important;
+    color: $dark !important;
+    &:focus {
+      background-color: $accent;
+      box-shadow: none;
     }
-    &:hover{
-        background-color: $warning;
-    }
-    &:focus{
-        outline: none !important;
-    }
-    @include pad{
-        margin-bottom: 20px;
-        background-color: $warning;
-        width: 80%;
-        &:hover{
-            background-color: $primary;
-        }
-    }
+  }
 }
-.login-form{
-    margin-bottom: 0px !important;
+.remember-label {
+  color: $white;
 }
-.login-input{
-    span{
-        padding: 20px;
+.login-btn {
+  background-color: $danger;
+  color: $white;
+  width: 100%;
+  border: none;
+  font-size: $font-size-lg;
+  transition: all 0.3s;
+  &:hover {
+    background-color: theme-color-level(danger, 2);
+  }
+}
+.fastLogin-col {
+  display: none;
+  .row {
+    @include pad {
+      width: 100%;
     }
-    .custom-input{
-        height: 58px;
-        background-color: $accent;
-        border: 1px solid $accent !important;
-        color: $dark !important;
-        &:focus{
-            background-color: $accent;
-            box-shadow: none;
-        }
-    }
+  }
 }
-.remember-label{
-    color: $white;
+.fastLogin-container {
+  background-color: $accent;
+  color: $info;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.login-btn{
-    background-color: $danger;
-    color: $white;
-    width: 100%;
-    border: none;
-    font-size: $font-size-lg;
-    transition: all 0.3s;
-    &:hover{
-        background-color: theme-color-level(danger, 2);
-    }
-}
-.fastLogin-col{
-    display: none;
-    .row{
-        @include pad{
-            width: 100%;
-        }
-    }
-}
-.fastLogin-container{
-    background-color: $accent;
-    color: $info;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-
-
-
 
 // footer
-.footer{
-    background-color: $info;
-    .footer-title{
-        font-size: 1.9rem;
-        @include iphone6{
-            font-size: 2rem;
-        }
-        @include pad{
-            margin-bottom: 115px;
-        }
+.footer {
+  background-color: $dark;
+  .footer-title {
+    font-size: 1.9rem;
+    @include iphone6 {
+      font-size: 2rem;
     }
-    .footer-text{
+    @include pad {
+      margin-bottom: 115px;
+    }
+  }
+  .footer-text {
     display: none;
-    @include pad{
-        display: block;
-        width: 100%;
-        writing-mode: vertical-rl;
-        letter-spacing: 7.5;
-        }
+    @include pad {
+      display: block;
+      width: 100%;
+      writing-mode: vertical-rl;
+      letter-spacing: 7.5;
     }
-    .footer-social-icon{
-        font-size: 1.8rem;
+  }
+  .footer-social-icon {
+    font-size: 1.8rem;
+  }
+  .footer-copyright {
+    @include pad {
+      display: flex;
+      justify-content: flex-end;
     }
-    .footer-copyright{
-        @include pad{
-            display: flex;
-            justify-content: flex-end;
-        }
-    }
+  }
 }
-.footer-info p{
-    margin-bottom: 0.1rem;
+.footer-info p {
+  margin-bottom: 0.1rem;
 }
 
-
-
-
-
+// modal-dialog
+.custom-modal-dialog {
+  color: $dark;
+}
+.close:focus {
+  outline: none;
+}
