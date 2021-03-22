@@ -1,4 +1,4 @@
-<html lang="zh-Hant">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -8,27 +8,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- fb meta -->
-    <link rel="shortcut icon" href="images/kuvar_favicon.ico" />
-    <meta name="Kuvar Indian Kitchen" content="道地的印度料理" />
+    <link rel="shortcut icon" href="images/spice_palace_favicon.ico" />
+    <meta name="Spice Palace" content="modern indian food" />
 
-    <meta property="og:title" content="Kuvar Indian Kitchen" />
+    <meta property="og:title" content="Spice Palace" />
     <meta
       property="og:description"
-      content="體驗印度料理，最令人難忘的美食之旅。"
+      content="Spice Palace presents its guests with the classic flavors of Indian Cuisine with a modern sensibility of the 21st century."
     />
     <meta property="og:type" content="website" />
+
     <meta
       property="og:url"
-      content="https://yuwensaf.github.io/WorkShop-kuvar-bootstrap/"
+      content="https://yuwensaf.github.io/spice-palace/"
     />
-    <meta property="og:image" content="https://i.ibb.co/2sd2vfp/logo.png" />
+    <meta property="og:image" content="https://i.ibb.co/yXYdkbd/anise.png" />
 
     <link
       rel="apple-touch-icon"
-      href="https://i.ibb.co/02DCRK0/logo-192x.png"
+      href="https://i.ibb.co/80qDr9S/anise-192x192.png"
     />
 
-    <title>Cart | Kuvar Indian Kitchen</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Andada"
+    />
+
+    <title>Spice Palace</title>
 
     <script
       src="https://kit.fontawesome.com/235111a63f.js"
@@ -62,54 +68,100 @@
         <!-- logo -->
         <nav class="navbar nav-logo bg-dark text-primary p-0">
           <a class="navbar-brand text-center d-flex" href="index.html">
-            <img
-              src="images/logo.svg"
-              class="mr-2 mt-1"
-              alt="Kuvar Indian Kitchen"
-              title="Kuvar Indian Kitchen"
-              style="width: 60px"
-            />
             <div>
-              <h1 class="mb-0">Kuvar</h1>
-              <span style="font-size: 0.8rem">INDIAN KITCHEN</span>
+              <h1 class="mb-0 letter-spacing-title website-title">
+                Spice Palace
+              </h1>
+              <span style="font-size: 0.8rem">modern indian food</span>
             </div>
           </a>
         </nav>
 
         <!-- 購物車按鈕 -->
-        <div class="order-md-3">
-          <a href="cart.html" class="btn-cart">
+        <div class="dropdown order-md-3">
+          <a href="#" class="btn-cart" data-toggle="dropdown">
             <i class="fas fa-shopping-cart text-primary"></i>
-            <!-- <span class="badge badge-pill badge-danger">7</span> -->
+            <span class="badge badge-pill badge-danger">4</span>
           </a>
+          <!-- 購物車的下拉式選單 -->
+          <div
+            class="dropdown-menu dropdown-menu-right cart-menu px-3 py-4"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <div class="h6">Shopping Cart</div>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>
+                    <a
+                      href="#"
+                      data-toggle="modal"
+                      data-target="#removeModal"
+                      data-title="Madras Soup"
+                      data-quantity="&nbsp;3"
+                      data-backdrop="false"
+                    >
+                      <i class="fas fa-trash-alt"></i>
+                    </a>
+                  </td>
+                  <td>Madras Soup</td>
+                  <td>3</td>
+                  <td>&dollar;210</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="#"
+                      data-toggle="modal"
+                      data-target="#removeModal"
+                      data-title="Lamb Vindaloo"
+                      data-quantity="&nbsp;1"
+                      data-backdrop="false"
+                    >
+                      <i class="fas fa-trash-alt"></i>
+                    </a>
+                  </td>
+                  <td>Lamb Vindaloo</td>
+                  <td>1</td>
+                  <td>&dollar;350</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Checkout 按鈕 -->
+            <a href="cart.html" class="btn btn-primary w-100 text-center"
+              >Checkout</a
+            >
+          </div>
         </div>
 
         <!-- 下拉式選單 -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">首頁</a>
+              <a class="nav-link" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="menu.html">菜單</a>
+              <a class="nav-link" href="menu.html">MENUS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.html">登入</a>
+              <a class="nav-link" href="login.html">LOGIN</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- here!!! shared layout -->
+
     <!-- cart section -->
     <section class="container pt-5">
       <div class="row cart-row">
-        <!-- 區塊：您的購物車 -->
+        <!-- 區塊：Shopping Cart -->
         <div class="col-md-8">
           <div class="bg-light">
-            <!-- 標題 您的購物車 -->
-            <div class="cart-title bg-info text-center text-white py-3">
-              <h3 class="mb-0">您的購物車</h3>
+            <!-- 標題 Shopping Cart -->
+            <div class="cart-title bg-info text-center text-dark py-3">
+              <h3 class="mb-0">Shopping Cart</h3>
             </div>
             <!-- 購物車內容 -->
             <div class="container py-2">
@@ -124,7 +176,7 @@
                 <div class="cart-item-content d-md-flex align-items-md-center">
                   <!-- 品名 + 單價 -->
                   <div class="cart-item-info mr-md-auto mb-md-0">
-                    <p class="cart-item-name">孜然南瓜湯</p>
+                    <p class="cart-item-name">Madras Soup</p>
                     <p>NT&dollar; 70</p>
                   </div>
                   <!-- 數量計數器 -->
@@ -163,10 +215,10 @@
                   <!-- 垃圾桶 -->
                   <a
                     href="#"
-                    class="d-none d-md-flex"
+                    class="cart-remove-btn"
                     data-toggle="modal"
                     data-target="#removeModal"
-                    data-title="孜然南瓜湯"
+                    data-title="Madras Soup"
                     data-quantity="&nbsp;3"
                     data-backdrop="false"
                   >
@@ -188,7 +240,7 @@
                 <div class="cart-item-content d-md-flex align-items-md-center">
                   <!-- 品名 + 單價 -->
                   <div class="cart-item-info mr-md-auto mb-md-0">
-                    <p class="cart-item-name">葫蘆巴風味羊肉</p>
+                    <p class="cart-item-name">Lamb Vindaloo</p>
                     <p>NT&dollar; 350</p>
                   </div>
                   <!-- 數量計數器 -->
@@ -227,10 +279,10 @@
                   <!-- 垃圾桶 -->
                   <a
                     href="#"
-                    class="d-none d-md-flex"
+                    class="cart-remove-btn"
                     data-toggle="modal"
                     data-target="#removeModal"
-                    data-title="葫蘆巴風味羊肉"
+                    data-title="Lamb Vindaloo"
                     data-quantity="&nbsp;1"
                     data-backdrop="false"
                   >
@@ -245,29 +297,22 @@
         </div>
         <!-- 區塊：訂單摘要 -->
         <div class="col-md-4">
-          <div class="bg-light">
-            <!-- 標題 -->
-            <div class="text-center text-dark pt-3 px-3">
-              <h3>訂單摘要</h3>
-            </div>
-
-            <hr class="mx-3" style="border-top: 1px solid #444444" />
-
+          <div class="bg-primary pt-3">
             <!-- 表格 -->
             <table class="text-dark order-table">
               <tbody>
                 <tr>
-                  <td>小計</td>
+                  <td>Order value</td>
                   <td>NT&dollar; 560</td>
                 </tr>
                 <tr>
-                  <td>運費</td>
+                  <td>Shipping</td>
                   <td>NT&dollar; 150</td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
-                  <td>總計</td>
+                  <td>Total</td>
                   <td>NT&dollar; 710</td>
                 </tr>
               </tfoot>
@@ -275,38 +320,40 @@
             <!-- 結帳按鈕 -->
             <a
               href="checkout.html"
-              class="d-block bg-danger text-white text-center py-3 mt-3 checkout-btn"
-              >結帳</a
+              class="d-block bg-danger text-dark text-center py-3 mt-3 checkout-btn"
+              >CONTINUE TO CHECKOUT</a
             >
           </div>
         </div>
       </div>
     </section>
 
+    <!-- here!!! shared layout -->
+
     <!-- subscribe section -->
-    <section class="subscribe" style="margin-top: 0px">
+    <section class="subscribe">
       <div class="container py-5">
         <div class="row align-items-center">
           <!-- 文字 -->
           <div class="col-md-6 subscribe-text">
-            <img src="images/logo.svg" class="mr-1" />
-            <p class="h4 text-dark mt-1 mb-0">訂閱你我的辛辣郵件</p>
+            <p class="h4 text-dark mt-1 mb-0">Subscribe to stay updated</p>
           </div>
           <!-- form-square -->
           <div class="col-md-6 subscribe-form">
-            <div class="input-group mb-3 form-square">
+            <div class="input-group form-square">
               <div
-                class="input-group-prepend bg-danger form-square-icon d-flex justify-content-center align-items-center"
+                class="input-group-prepend form-square-icon d-flex justify-content-center align-items-center"
               >
                 <i class="fas fa-envelope text-white"></i>
               </div>
               <input
                 type="email"
-                class="form-control form-square-input"
+                class="form-control form-square-input bg-light"
                 aria-label="Amount (to the nearest dollar)"
+                placeholder="Email Address"
               />
               <div class="input-group-append form-square-btn">
-                <button class="btn-danger">
+                <button class="btn-subscribe">
                   <i class="fas fa-arrow-right text-white"></i>
                 </button>
               </div>
@@ -319,23 +366,17 @@
     <!-- footer -->
     <footer class="footer py-3">
       <div class="container">
-        <!-- 第一個 row：店面資訊 + 右側文字 -->
-        <div class="row mb-4">
-          <div class="col-md-6">
-            <div class="footer-title">
-              <p class="text-white">Kuvar Indian Kitchen</p>
-            </div>
-            <div class="footer-info text-white">
-              <p>02-2345-9876</p>
-              <p>kuvar@gmail.com</p>
-              <p>318&nbsp;台北市瑪薩拉區木藤路&nbsp;79&nbsp;號</p>
-            </div>
+        <!-- 店面資訊 -->
+        <div class="mb-4">
+          <div class="footer-title">
+            <p class="text-white">Spice Palace</p>
           </div>
-          <div class="col-md-6">
-            <div class="footer-text text-white">
-              <p class="h5">今天是個——</p>
-              <p class="h5 mt-3">吃咖哩的好日子。</p>
-            </div>
+          <div class="footer-info text-white">
+            <p>02-8051-1234</p>
+            <p>spicepalace@gmail.com</p>
+            <p>
+              123&nbsp;West&nbsp;23th&nbsp;Street,&nbsp;Taipei,&nbsp;Taiwan&nbsp;10035
+            </p>
           </div>
         </div>
 
@@ -349,8 +390,8 @@
             </div>
           </div>
           <!-- copyright -->
-          <div class="col-md-6 footer-copyright text-primary">
-            <p>&copy; 2019 Kuvar All Rights Reserved</p>
+          <div class="col-md-6 footer-copyright text-white">
+            <p>&copy; 2021 Spice Palace All Rights Reserved</p>
           </div>
         </div>
       </div>
@@ -365,9 +406,9 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog custom-modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header bg-danger text-white">
+          <div class="modal-header bg-danger">
             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
             <button
               type="button"
@@ -378,18 +419,15 @@
               <span class="text-light" aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <p class="h6">是否刪除該品項？</p>
-          </div>
           <div class="modal-footer">
             <button
               type="button"
               class="btn btn-secondary"
               data-dismiss="modal"
             >
-              取消
+              Cancel
             </button>
-            <button type="button" class="btn btn-danger">確定</button>
+            <button type="button" class="btn btn-danger">Remove</button>
           </div>
         </div>
       </div>

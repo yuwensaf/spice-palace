@@ -34,7 +34,7 @@
   margin-bottom: 2px;
   background-size: cover;
   background-position: center center;
-  transition: all 0.5s;
+  transition: all 0.3s;
   span {
     z-index: 5;
     color: $dark;
@@ -138,5 +138,5 @@
   left: 0;
   background-color: rgba(234, 227, 200, 0.8);
   z-index: 5;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }

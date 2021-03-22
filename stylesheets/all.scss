@@ -1,10 +1,7 @@
-
-
 // Required
 @import "../node_modules/bootstrap/scss/functions";
 @import "helpers/variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
-
 
 // mixins
 @import "components/grid";
@@ -19,18 +16,6 @@
 @import "components/item-card";
 @import "components/form-square"; // 長方形的 input
 @import "components/interactive"; // 互動元件
-@import "components/process-steps"; // 步驟的列表
 @import "components/custom-bs4"; // Bootstrap 4 調整
 
-
-
-
-
-
-
 // 通用類別
-
-
-
-
-

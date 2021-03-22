@@ -151,6 +151,7 @@
 
 // login page
 .login-secton {
+  margin-bottom: 90px;
   @include pad {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -168,6 +169,7 @@
   background-color: $info;
   .login-box-title {
     background-color: $info;
+    color: $dark;
   }
 }
 .social-btn {
@@ -203,20 +205,20 @@
   }
   .custom-input {
     height: 58px;
-    background-color: $accent;
-    border: 1px solid $accent !important;
+    background-color: $primary;
+    border: 2px solid transparent;
     color: $dark !important;
     &:focus {
-      background-color: $accent;
       box-shadow: none;
+      border: 2px solid $warning !important;
     }
   }
 }
 .remember-label {
-  color: $white;
+  color: $dark;
 }
 .login-btn {
-  background-color: $danger;
+  background-color: $warning;
   color: $white;
   width: 100%;
   border: none;
@@ -236,7 +238,7 @@
 }
 .fastLogin-container {
   background-color: $accent;
-  color: $info;
+  color: $dark;
   padding-top: 20px;
   padding-bottom: 20px;
 }
